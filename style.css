@@ -10,11 +10,21 @@
 .white{
     color: white;
 }
+.grey {
+    color: rgb(150, 150, 150);
+}
+.font-sans {
+    font-family: sans-serif;
+}
+.bold {
+    font-weight: bold;
+}
 .container_login {
     margin: 0 auto;
-    margin-top: 80px;
-    height: 500px;
-    width: 900px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 600px;
+    width: 1100px;
     background-color: white;
     display: flex;
     font-family: sans-serif;
@@ -22,13 +32,33 @@
 }
 .container_login_1{
     background-image: url('asset/frame1.png');
-    background-size: 450px;
-    height: 100%;
-    width: 50%;
-    margin:200px 20px;
+    background-size: 550px;
+    width: 510px;
+    font-size: 25px;
+    color: white;
+    padding: 250px 0px 100px 40px;
 }
 .container_login_2{
 
-    height: 100%;
-    width: 50%;
+    width: 450px;
+    padding: 100px 50px 0px 50px;
+}
+.input_1{
+    padding: 10px 20px;
+    width: 90%;
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.button_1 {
+    background-color: black;
+    color: white;
+    padding: 12px 200px ;
+    border-radius: 8px;
+}
+.button_1:hover{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    transition-duration: 0.5s;
 }
