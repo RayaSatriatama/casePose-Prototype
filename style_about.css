@@ -1,0 +1,67 @@
+*{
+    padding: 0 ;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container_about {
+    width: 1440px;
+    height: 2437px;
+    background: #FFF;
+}
+
+.container_header {
+    width: 1120px;
+    height: 621px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: url(/asset/rectangle-10.png) lightgray 50% / cover no-repeat;
+}
+
+.container_header h1 {
+    color: var(--tailwind-css-332-white, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 179.2px */
+}
+
+.container_header .title {
+    color: var(--tailwind-css-332-white, #FFF);
+    text-align: center;
+
+    /* Header/H5 */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+}
+
+.container_header .trademark {
+    color: var(--tailwind-css-332-white, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Label/Medium */
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 10px */
+}
+
+.container_header .description {
+    color: var(--tailwind-css-332-gray-400, #9CA3AF);
+
+    /* Text/Body2-Regular */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
+
