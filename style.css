@@ -49,9 +49,27 @@
     width: 450px;
     padding: 60px 50px 0px 50px;
 }
+.container_login_3{
+    width: 450px;
+    padding: 30px 50px 0px 50px;
+}
+.container_reg_1{
+    display: flex;
+}
+.container_reg_1_1{
+    margin-right: 20px;
+}
 .input_1{
     padding: 10px 20px;
     width: 90%;
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.input_2{
+    padding: 10px 20px;
+    width: 76%;
     border: 2px solid rgb(206, 206, 206);
     border-radius: 8px;
     font-size: 15px;
