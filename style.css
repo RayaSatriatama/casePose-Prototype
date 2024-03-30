@@ -10,3 +10,25 @@
 .white{
     color: white;
 }
+.container_login {
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 500px;
+    width: 900px;
+    background-color: white;
+    display: flex;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+.container_login_1{
+    background-image: url('asset/frame1.png');
+    background-size: 450px;
+    height: 100%;
+    width: 50%;
+    margin:200px 20px;
+}
+.container_login_2{
+
+    height: 100%;
+    width: 50%;
+}
