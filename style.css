@@ -68,3 +68,115 @@
     color: white;
     transition-duration: 0.5s;
 }
+
+/* class navigation bar */
+.navigation-bar{
+    height: 500px;
+}
+
+/* class header home */
+.header-home{
+    height: 500px;
+}
+
+/* class list card */
+.list-card{
+    height: 500px;
+}
+
+/* class footer */
+.footer{
+    display: flex;
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+    padding: 140px 160px 100px 160px;
+    flex-direction: column;
+    align-items: center;
+    gap: 62px;
+    background: #030712; 
+}
+
+/* id bottom nav */
+#bottom-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+#navigation{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#bottom-nav{
+    padding-left: 12px; 
+    padding-right: 12px; 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+}
+
+.bottom-nav-text{
+    color: white; 
+    font-size: 18px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    line-height: 25.20px; 
+    word-wrap: break-word;
+}
+
+#bottom-nav-button{
+    width: 128px; 
+    align-self: stretch; 
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 16px; 
+    display: flex;
+}
+
+.social{
+    width: 32px; 
+    height: 32px; 
+    position: relative;
+}
+
+.social-button{
+    width: 32px;
+    height: 32px;
+}
+
+#container-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.logo{
+    width: 100%;
+    height: 100%; 
+    position: relative
+}
+
+#casePose-text{
+    color: white; 
+    font-size: 64px; 
+    font-family: Roboto; 
+    font-weight: 500; 
+    line-height: 89.60px;
+}
+
+#copyright{
+    text-align: center; 
+    color: white; 
+    font-size: 28px; 
+    font-family: Roboto; 
+    font-weight: 500; 
+    line-height: 39.20px;
+}
