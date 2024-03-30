@@ -16,7 +16,7 @@
     height: 621px;
     flex-shrink: 0;
     border-radius: 40px;
-    background: url(/asset/rectangle-10.png) lightgray 50% / cover no-repeat;
+    background: url(asset\rectangle-10.png) lightgray 50% / cover no-repeat;
 }
 
 .container_header h1 {
