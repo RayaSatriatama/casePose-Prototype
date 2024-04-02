@@ -286,3 +286,11 @@
     line-height: 25.20px; 
     word-wrap: break-word;
 }
+
+.Profile {
+    width: 1440px;
+    height: 1839px;
+    flex-grow: 0;
+    padding: 28px 0 0;
+    background-color: #fff;
+  }
