@@ -337,3 +337,68 @@
     background-size: 20px;
     background-position: 8px 8px;
 }
+
+profil {
+    height: 130px;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 15px 0px;
+    display: flex;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    border: 1px solid rgb(218, 218, 218);
+}
+.profil_2{
+    width: auto;
+    height: 120px;
+    display: flex;
+}
+.profil_foto
+{
+    background-image: url('asset/pp.png');
+    background-size: 100px;
+    height: 100px;
+    width: 100px;
+    margin: 15px;
+    border-radius: 100px;
+    line-height: 130px;
+    margin-right: 40px;
+}
+.profil_desc{
+    margin-left: 40px;
+}
+.profil_bagan{
+    height: 40px;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 2px 0px;
+    display: flex;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    border: 2px solid rgb(218, 218, 218);
+}
+.content_card {
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
+}
+.card {
+    margin-top: 20px;
+    width: 340px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.card_image {
+    background-image: url('asset/grab.png');
+    background-size: cover;
+    border-radius: 10px;
+    width: 340px;
+    height: 280px;
+}
