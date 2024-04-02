@@ -50,24 +50,51 @@ a {
 .about .frame {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 8px 12px;
     position: relative;
     flex: 0 0 auto;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
+    gap: 10px;
+    transition: background-color 0.3s, fill 0.3s;
 }
 
-/*  */
-.about .text-wrapper {
-    margin-top: -2px;
-    color: rgba(17, 24, 39, 1);
-    position: relative;
-    font-family: Roboto;
+.about .frame:hover {
+    background-color: rgba(255, 255, 255, 1); /* White background on hover */
+    color: rgba(3, 7, 18, 1); /* Black text on hover */
+}
+
+.button-nav {
+    all: unset;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 18px;
-    letter-spacing: 0px;
     line-height: 140%;
-    white-space: nowrap;
-    font-style: normal;
+    color: rgba(17, 24, 39, 1);
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.button-nav.active {
+    font-weight: 700;
+    border-bottom: 2px solid #0F172A;
+}
+
+.button-nav:hover {
+    font-weight: 700;
+    border-bottom: 2px solid #0F172A;
+}
+
+.text-wrapper {
+    display: block;
 }
 
 .about .div-wrapper {
@@ -82,7 +109,6 @@ a {
     border-color: rgba(15, 23, 42, 1);
 }
 
-/*  */
 .about .div {
     margin-top: -2px;
     font-weight: 700;
@@ -112,24 +138,7 @@ a {
     flex: 0 0 auto;
 }
 
-.about .button-contained {
-    all: unset;
-    box-sizing: border-box;
-    display: inline-flex;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    position: relative;
-    flex: 0 0 auto;
-    border-radius: 6px;
-    overflow: hidden;
-    border: 1px solid;
-    border-color: rgba(233, 233, 235, 1);
-}
-
 .about .text {
-    color: rgba(32, 32, 32, 1);
     position: relative;
     font-family: Roboto;
     font-weight: 600;
@@ -138,23 +147,9 @@ a {
     line-height: 100%;
     white-space: nowrap;
     font-style: normal;
-}
-
-.about .button-contained-2 {
-    display: inline-flex;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: rgba(3, 7, 18, 1);
-    border-radius: 6px;
-    overflow: hidden;
 }
 
 .about .text-2 {
-    color: rgba(255, 255, 255, 1);
     position: relative;
     font-family: Roboto;
     font-weight: 600;
@@ -163,6 +158,44 @@ a {
     line-height: 100%;
     white-space: nowrap;
     font-style: normal;
+}
+
+.button-contained {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(3, 7, 18, 1);
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, fill 0.3s;
+}
+
+.button-contained:hover {
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.button-contained-2 {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, fill 0.3s;
+}
+
+.button-contained-2:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(3, 7, 18, 1);
 }
 
 .about .overlap-group {
@@ -389,9 +422,6 @@ a {
 }
 
 .about .text-wrapper-6 {
-    margin-top: -1px;
-    color: rgba(255, 255, 255, 1);
-    position: relative;
     font-family: Roboto;
     font-weight: 400;
     font-size: 18px;
@@ -401,10 +431,30 @@ a {
     font-style: normal;
 }
 
-.about .img {
-    position: relative;
-    align-self: stretch;
-    flex: 0 0 auto;
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    fill: white;
+    padding: 8px;
+    margin-right: 10px;
+    transition: background-color 0.3s, fill 0.3s;
+}
+
+.social-button:hover #Vector-icon {
+    fill: rgba(32, 32, 32, 1);
+}
+
+.social-button:hover {
+    background-color: white;
+}
+
+.social-button svg {
+    width: 100%;
+    height: auto;
 }
 
 .about .logo {
