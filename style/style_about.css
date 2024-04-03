@@ -1,42 +1,181 @@
-* {
-    -webkit-font-smoothing: antialiased;
+html {
+    font-size: 16px; /* Base font size */
+}
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0px;
-    height: 100%;
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 
-button:focus-visible, 
-a:focus-visible {
-    outline: 2px solid #4a90e2;
-    outline-offset: 2px;
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
 .about {
-    position: relative;
-    width: 1440px;
-    height: 2437px;
     background-color: #ffffff;
+    min-height: 100vh;
+    padding: 0 5%; /* Responsive padding */
 }
 
 .about .navigation-bar {
     display: flex;
-    width: 1120px;
-    align-items: center;
     justify-content: space-between;
-    padding: 12px 24px;
-    position: absolute;
-    top: 28px;
-    left: 160px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    border: 1px solid #F1F5F9;
+    padding: 12px 12rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index:99;
+}
+
+/* Responsive Frames */
+.about .frame, .about .frame-2, .about .frame-3, .about .frame-4, .about .frame-5 {
+    gap: 5px; /* Adjust gap */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    html {
+        font-size: 15px; /* Smaller base font size for smaller devices */
+    }
+
+    /* .about .navigation-bar {
+        flex-direction: column;
+        align-items: center;
+    } */
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 0 4%;
+    }
+
+    .about .navigation-bar {
+        padding: 10px 0.5rem;
+    }
+
+    .about .frame, .about .frame-2, .about .frame-3, .about .frame-4, .about .frame-5 {
+        gap: 2%; /* Reduced gap */
+        padding: 6px 8px; /* Smaller padding */
+    }
+
+    /* Adjust font sizes and element sizes for smaller screens */
+    .button-nav, .about .div, .about .text, .about .text-2, .about .IS-ONE-OF-PORTFOLIO, .about .span {
+        font-size: 0.9rem; /* Smaller font sizes */
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px; /* Further reduce font size for very small devices */
+    }
+
+    .about .navigation-bar {
+        flex-direction: column;
+    }
+
+    .about .frame, .about .frame-2, .about .frame-3, .about .frame-4, .about .frame-5 {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    /* Simplify or hide certain elements that might clutter small screens */
+}
+
+/* Responsive Typography */
+/* Adjust typography for better readability on smaller screens */
+.text, .about .text-2, .about .div, .about .IS-ONE-OF-PORTFOLIO, .about .span {
+    font-size: calc(1rem + 0.5vw); /* Dynamic font sizing */
+}
+
+/* Responsive Containers */
+/* Use percentage-based widths or max-width to allow containers to grow or shrink */
+.about .div-wrapper, .about .overlap-group, .about .frame-4, .about .frame-5, .about .frame-6 {
+    width: 100%;
+    margin: auto; /* Center align */
+}
+
+/* Adjust Padding and Margins Responsively */
+/* Ensuring padding and margins are flexible */
+.about .frame, .about .div-wrapper {
+    padding: 1rem; /* Responsive padding */
+    margin-bottom: 1rem; /* Space out elements */
+}
+
+/* Responsive Images */
+/* Ensure images scale nicely and don't exceed their container's width */
+.about .image, .about .image-2 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adjust for responsiveness */
+    background-size: cover;
+}
+
+/* Media Queries for Additional Adjustments */
+@media (max-width: 600px) {
+    /* Stack navigation items vertically */
+    .about .navigation {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* Adjust layout for very small screens */
+    .about .frame, .about .frame-2, .about .frame-3, .about .frame-4, .about .frame-5 {
+        padding: 0.5rem;
+        gap: 8px;
+    }
+
+    /* Reduce font size for smaller devices */
+    .button-nav, .about .text, .about .text-2, .about .div {
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsive Flexbox/Grid Layouts */
+/* Flexbox and Grid can also be made responsive with 'flex-wrap' and 'grid-template-columns' */
+.about .frame-5, .about .places {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about .frame-5 {
+    justify-content: center; /* Center items */
+}
+
+/* For grid layouts */
+.about .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create responsive grids */
+    gap: 20px;
+}
+
+/* Ensure all interactive elements are easily clickable */
+.button-nav, .social-button {
+    min-width: 44px; /* Minimum touch target size */
+    min-height: 44px;
+    padding: 0.5rem;
+    margin: 0.25rem;
 }
 
 .about .navigation {
@@ -50,24 +189,57 @@ a {
 .about .frame {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 8px 12px;
     position: relative;
     flex: 0 0 auto;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
+    gap: 10px;
+    transition: background-color 0.3s, fill 0.3s;
 }
 
-/*  */
-.about .text-wrapper {
-    margin-top: -2px;
+.about .frame:hover {
+    background-color: rgba(255, 255, 255, 1); /* White background on hover */
+    color: rgba(3, 7, 18, 1); /* Black text on hover */
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.button-nav {
+    all: unset;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
     color: rgba(17, 24, 39, 1);
-    position: relative;
-    font-family: Roboto;
-    font-weight: 400;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
     font-size: 18px;
-    letter-spacing: 0px;
+    font-weight: 400;
     line-height: 140%;
-    white-space: nowrap;
-    font-style: normal;
+    margin: 0 4px;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.button-nav.active, .button-nav:hover {
+    border-bottom: 2px solid #0F172A;
+    font-weight: 700;
+}
+
+.text-wrapper {
+    display: block;
 }
 
 .about .div-wrapper {
@@ -82,7 +254,6 @@ a {
     border-color: rgba(15, 23, 42, 1);
 }
 
-/*  */
 .about .div {
     margin-top: -2px;
     font-weight: 700;
@@ -112,24 +283,7 @@ a {
     flex: 0 0 auto;
 }
 
-.about .button-contained {
-    all: unset;
-    box-sizing: border-box;
-    display: inline-flex;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    position: relative;
-    flex: 0 0 auto;
-    border-radius: 6px;
-    overflow: hidden;
-    border: 1px solid;
-    border-color: rgba(233, 233, 235, 1);
-}
-
 .about .text {
-    color: rgba(32, 32, 32, 1);
     position: relative;
     font-family: Roboto;
     font-weight: 600;
@@ -138,23 +292,9 @@ a {
     line-height: 100%;
     white-space: nowrap;
     font-style: normal;
-}
-
-.about .button-contained-2 {
-    display: inline-flex;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: rgba(3, 7, 18, 1);
-    border-radius: 6px;
-    overflow: hidden;
 }
 
 .about .text-2 {
-    color: rgba(255, 255, 255, 1);
     position: relative;
     font-family: Roboto;
     font-weight: 600;
@@ -163,6 +303,44 @@ a {
     line-height: 100%;
     white-space: nowrap;
     font-style: normal;
+}
+
+.button-contained {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(3, 7, 18, 1);
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, fill 0.3s;
+}
+
+.button-contained:hover {
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.button-contained-2 {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, fill 0.3s;
+}
+
+.button-contained-2:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(3, 7, 18, 1);
 }
 
 .about .overlap-group {
@@ -367,7 +545,7 @@ a {
 .about .footer {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
     align-items: center;
     gap: 62px;
     padding: 140px 160px 100px;
@@ -389,9 +567,6 @@ a {
 }
 
 .about .text-wrapper-6 {
-    margin-top: -1px;
-    color: rgba(255, 255, 255, 1);
-    position: relative;
     font-family: Roboto;
     font-weight: 400;
     font-size: 18px;
@@ -401,10 +576,30 @@ a {
     font-style: normal;
 }
 
-.about .img {
-    position: relative;
-    align-self: stretch;
-    flex: 0 0 auto;
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    fill: white;
+    padding: 8px;
+    margin-right: 10px;
+    transition: background-color 0.3s, fill 0.3s;
+}
+
+.social-button:hover #Vector-icon {
+    fill: rgba(32, 32, 32, 1);
+}
+
+.social-button:hover {
+    background-color: white;
+}
+
+.social-button svg {
+    width: 100%;
+    height: auto;
 }
 
 .about .logo {
