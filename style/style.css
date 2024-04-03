@@ -87,10 +87,6 @@
     transition-duration: 0.5s;
 }
 
-/* class navigation bar */
-.navigation-bar{
-    height: 500px;
-}
 
 /* class header home */
 .header-home{
@@ -111,7 +107,7 @@
     flex-direction: column;
     align-items: center;
     gap: 62px;
-    background: #030712; 
+    background: #030712;
 }
 
 /* id bottom nav */
@@ -283,6 +279,7 @@
     font-weight: 400; 
     line-height: 19.60px; 
     word-wrap: break-word;
+    margin-bottom: 12px;
 }
 
 #text{
@@ -290,17 +287,18 @@
     justify-content: flex-start; 
     align-items: center; 
     gap: 8px;
+    margin-bottom: 32px;
 }
 
 .text-field-icon{
+    margin: 0;
     width: 365px;
-    height: 100%;
+    height: 54px;
     box-sizing: border-box;
-    padding: 12px 32px 12px 32px;
+    padding: 12px 32px 12px 52px;
     border: 1px solid rgb(206, 206, 206);
     border-radius: 8px;
-    background-color: white;
-    background: url('../asset/magnifying-glass.png') no-repeat scroll 7px 7px;
+    background: url('../asset/magnifying-glass.png') no-repeat scroll;
     background-size: 20px;
-    background-position: 8px 8px;
+    background-position: center left 24px;
 }
