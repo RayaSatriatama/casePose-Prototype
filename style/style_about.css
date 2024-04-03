@@ -75,6 +75,10 @@ a {
         padding: 10px 0.5rem;
     }
 
+    .about .navigation-2 {
+        flex-direction: column;
+    }
+
     .about .frame, .about .frame-2, .about .frame-3, .about .frame-4, .about .frame-5 {
         gap: 2%; /* Reduced gap */
         padding: 6px 8px; /* Smaller padding */
@@ -96,10 +100,8 @@ a {
     }
 
     .about .frame, .about .frame-2, .about .frame-3, .about .frame-4, .about .frame-5 {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
     }
-
-    /* Simplify or hide certain elements that might clutter small screens */
 }
 
 /* Responsive Typography */
@@ -135,8 +137,12 @@ a {
 @media (max-width: 600px) {
     /* Stack navigation items vertically */
     .about .navigation {
-        flex-direction: column;
+        flex-direction: row;
         gap: 8px;
+    }
+
+    .about .navigation-2 {
+        flex-direction: column;
     }
 
     /* Adjust layout for very small screens */
