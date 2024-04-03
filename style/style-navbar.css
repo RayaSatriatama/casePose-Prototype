@@ -7,8 +7,9 @@
     border-radius: 12px; 
     border: 1px #F1F5F9 solid; 
     justify-content: space-between; 
-    align-items: stretch; 
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
 }
 
 #top-navigation-menu{
