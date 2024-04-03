@@ -30,7 +30,8 @@ a {
 .about {
     background-color: #ffffff;
     min-height: 100vh;
-    padding: 0 5%; /* Responsive padding */
+    align-items: center;
+    justify-content: center;
 }
 
 .about .navigation-bar {
@@ -59,11 +60,6 @@ a {
     html {
         font-size: 15px; /* Smaller base font size for smaller devices */
     }
-
-    /* .about .navigation-bar {
-        flex-direction: column;
-        align-items: center;
-    } */
 }
 
 @media (max-width: 768px) {
@@ -354,7 +350,7 @@ a {
     width: 1120px;
     height: 621px;
     top: 170px;
-    left: 160px;
+    display:flex;
     background-image: url(https://c.animaapp.com/tjFjNvMJ/img/rectangle-10.png);
     background-size: cover;
     background-position: 50% 50%;
