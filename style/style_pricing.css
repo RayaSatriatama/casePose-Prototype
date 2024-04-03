@@ -80,3 +80,14 @@
     position: absolute !important;
     top: 951px !important;
   }
+  
+ /* farhan */
+  .alert1 {
+    margin: 40px auto;
+    text-align: center;
+    width: 1120px;
+    padding-top: 80px;
+    height: 500px;
+    border-radius: 20px;
+    border: 1px solid #f9f9f9;
+  }
