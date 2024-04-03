@@ -17,10 +17,10 @@
 
 #top-navigation-menu{
     display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  position: relative;
-  margin: 0;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    margin: 0;
 }
 
 

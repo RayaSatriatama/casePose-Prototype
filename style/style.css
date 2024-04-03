@@ -87,17 +87,6 @@
     transition-duration: 0.5s;
 }
 
-
-/* class header home */
-.header-home{
-    height: 500px;
-}
-
-/* class list card */
-.list-card{
-    height: 500px;
-}
-
 /* class footer */
 .footer{
     display: flex;
