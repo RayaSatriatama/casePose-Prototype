@@ -1,0 +1,94 @@
+/* Halaman home bagian navigation bar */
+.navigation-bar{
+    width: 1120px;
+    height: auto;
+    padding: 12px 24px 12px 24px; 
+    background: white; 
+    border-radius: 12px; 
+    border: 1px #F1F5F9 solid; 
+    justify-content: space-between; 
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#top-navigation-menu{
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    margin: 0;
+}
+
+
+.button-submit{
+    display: flex;
+    height: 32px;
+    padding: 6px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #030712;
+    font-family: Roboto; 
+    font-weight: 500; 
+    line-height: 89.60px;
+    color: #ffffff;
+}
+
+.button-sign-up{
+    display: flex;
+    height: 32px;
+    padding: 6px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px #E9E9EB solid;
+    font-family: Roboto; 
+    color: #202020;
+    font-weight: 500; 
+    line-height: 89.60px;
+}
+
+#cta-nav-bar{
+    justify-content: flex-end;
+    align-items: center; 
+    gap: 16px; 
+    display: flex;
+    margin: 0;
+}
+
+#top-nav-active{
+    display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  position: relative;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+    
+}
+
+#top-nav-inactive{
+    padding: 8px 12px 8px 12px;
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+}
+
+.top-nav-text-active{
+    color: #111827; 
+    font-size: 18px; 
+    font-family: Roboto; 
+    font-weight: 700; 
+    line-height: 25.20px; 
+    word-wrap: break-word;
+}
+.top-nav-text-inactive{
+    color: #111827; 
+    font-size: 18px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    line-height: 25.20px; 
+    word-wrap: break-word;
+}
