@@ -30,7 +30,8 @@ a {
 .about {
     background-color: #ffffff;
     min-height: 100vh;
-    padding: 0 5%; /* Responsive padding */
+    align-items: center;
+    justify-content: center;
 }
 
 .about .navigation-bar {
@@ -59,11 +60,6 @@ a {
     html {
         font-size: 15px; /* Smaller base font size for smaller devices */
     }
-
-    /* .about .navigation-bar {
-        flex-direction: column;
-        align-items: center;
-    } */
 }
 
 @media (max-width: 768px) {
@@ -73,6 +69,10 @@ a {
 
     .about .navigation-bar {
         padding: 10px 0.5rem;
+    }
+
+    .about .navigation-2 {
+        flex-direction: column;
     }
 
     .about .frame, .about .frame-2, .about .frame-3, .about .frame-4, .about .frame-5 {
@@ -96,10 +96,8 @@ a {
     }
 
     .about .frame, .about .frame-2, .about .frame-3, .about .frame-4, .about .frame-5 {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
     }
-
-    /* Simplify or hide certain elements that might clutter small screens */
 }
 
 /* Responsive Typography */
@@ -135,8 +133,12 @@ a {
 @media (max-width: 600px) {
     /* Stack navigation items vertically */
     .about .navigation {
-        flex-direction: column;
+        flex-direction: row;
         gap: 8px;
+    }
+
+    .about .navigation-2 {
+        flex-direction: column;
     }
 
     /* Adjust layout for very small screens */
@@ -348,7 +350,7 @@ a {
     width: 1120px;
     height: 621px;
     top: 170px;
-    left: 160px;
+    display:flex;
     background-image: url(https://c.animaapp.com/tjFjNvMJ/img/rectangle-10.png);
     background-size: cover;
     background-position: 50% 50%;
