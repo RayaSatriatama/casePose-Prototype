@@ -13,14 +13,18 @@
     background-color: white;
     color: black;
 }
-.card:hover{
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-}
 .card_image {
-    background-image: url('../asset/grab.png');
     background-size: cover;
     border-radius: 10px;
     width: 340px;
     height: 280px;
-} 
+}
+.card_image_hover{
+    border-radius: 10px;
+    width: 340px;
+    height: 280px;
+}
+.card_image_hover:hover {
+    background-color: rgba(0, 0, 0, 0.493);
+    transition-duration: 0.5s;
+}

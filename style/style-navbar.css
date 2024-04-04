@@ -1,5 +1,140 @@
-/* Halaman home bagian navigation bar */
-.navigation-bar{
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+}
+
+.navigation {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.text-wrapper {
+    display: block;
+}
+
+.rectangle {
+    position: relative;
+    width: 106px;
+    height: 44px;
+    background-color: #d9d9d9;
+}
+
+.frame-2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.text {
+    position: relative;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 100%;
+    white-space: nowrap;
+    font-style: normal;
+}
+
+.text-2 {
+    position: relative;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 100%;
+    white-space: nowrap;
+    font-style: normal;
+}
+
+.button-contained {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(3, 7, 18, 1);
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, fill 0.3s;
+}
+
+.button-contained:hover {
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.button-contained-2 {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, fill 0.3s;
+}
+
+.button-contained-2:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(3, 7, 18, 1);
+}
+
+.button-nav {
+    all: unset;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    color: rgba(17, 24, 39, 1);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0 4px;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.button-nav.active, .button-nav:hover {
+    border-bottom: 2px solid #0F172A;
+    font-weight: 700;
+}
+.foto-profil {
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.foto-profil-hover{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.foto-profil-hover:hover {
+    background-color: rgba(0, 0, 0, 0.285);
+    transition-duration: 0.2s;
+}
+
+/* style navbarr yang lama vesi nadia */
+/* .navigation-bar{
     width: 1120px;
     height: auto;
     padding: 12px 24px 12px 24px; 
@@ -92,4 +227,4 @@
     font-weight: 400; 
     line-height: 25.20px; 
     word-wrap: break-word;
-}
+} */ 
