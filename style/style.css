@@ -220,8 +220,6 @@
     word-wrap: break-word;
     margin-bottom: 12px;
 }
-
-
 #text{
     flex-direction: column; 
     justify-content: flex-start; 
@@ -229,9 +227,8 @@
     gap: 8px;
     margin-bottom: 32px;
 }
-
 .text-field-icon{
-    width: 365px;
+    width: 500px;
     height: 54px;
     box-sizing: border-box;
     padding: 12px 32px 12px 52px;
