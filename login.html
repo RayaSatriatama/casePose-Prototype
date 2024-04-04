@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/style_2.css">
 </head>
+
 <body>
     <div class="container_login">
         <div class="container_login_1">
@@ -15,16 +17,32 @@
         </div>
         <div class="container_login_2">
             <h1>Sign in</h1>
-            <label class="roboto grey">Wecome back! please login to you </label> <br>
-            <label class="roboto grey">account</label><br><br>
-            <label for="Email" class="sans-serif bold"> Email</label><br>
-            <input type="text" id="email" name="email" class="input_1" placeholder="Click here....."    ><br><br>
-            <label for="password" class="sans-serif bold">password</label><br>
-            <input type="password" id="password" name="password" class="input_1" placeholder="Click here....."><br><br><br><br>
-            <button id="signInButton" class="button_1">Sign in</button><br><br><br><br>
-            <p class="sans-serif grey" style="text-align: center;">new user? <a href="registrasi.html" class="sans-serif" style="color: rgb(39, 115, 255); font-weight: bold;">Sign up</a></p>
+            <label class="roboto grey">Welcome back! Please login to your account.</label><br><br>
+            <label for="email" class="sans-serif bold">Email</label><br>
+            <input type="email" id="email" name="email" class="input_1" placeholder="Click here....."><br><br>
+            <label for="password" class="sans-serif bold">Password</label><br>
+            <input type="password" id="password" name="password" class="input_1" placeholder="Click here....."><br><br>
+            <label id="error-label" class="roboto bold red" style="display:none;">Invalid email or password</label>
+            <br><br><button id="signInButton" class="button_1">Sign in</button><br><br><br>
+            <p class="sans-serif grey" style="text-align: center;">New user? <a href="registrasi.html" class="sans-serif" style="color: rgb(39, 115, 255); font-weight: bold;">Sign up</a></p>
         </div>
     </div>
-    <script src="/javascript/login.js"></script>
+    <script>
+        document.getElementById("signInButton").addEventListener("click", function() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Validasi email dan password
+            if (email === "leonardo@gmail.com" && password === "leonardo") {
+                // Redirect ke halaman dashboard jika login berhasil
+                window.location.href = "after/index.html";
+            } else {
+                // Menampilkan label error jika login gagal
+                var errorLabel = document.getElementById("error-label");
+                errorLabel.style.display = "block";
+            }
+        });
+    </script>
 </body>
+
 </html>
