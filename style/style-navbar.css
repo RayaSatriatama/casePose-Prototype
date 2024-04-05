@@ -118,20 +118,81 @@
     font-weight: 700;
 }
 .foto-profil {
-    background-size: 50px;
-    height: 50px;
-    width: 50px;
+    background-size: 38px;
+    height: 38px;
+    width: 38px;
     border-radius: 50px;
+    border: 1px solid white;
 }
-.foto-profil-hover{
+.button-dropdown {
+    background-color: #F1F5F9   ;
+    width: 100px;
     height: 50px;
-    width: 50px;
-    border-radius: 50px;
+    border-radius: 7px;
+    margin: auto 0;
+    position: relative;
+    display: flex;
+    transition: 0.5s;
 }
-.foto-profil-hover:hover {
-    background-color: rgba(0, 0, 0, 0.285);
-    transition-duration: 0.2s;
+.button-dropdown:hover{
+    border-radius: 7px 7px 0px 0px;
+    width: 200px;
+    background-color: #d3e7fb;
+    transition-duration: 0.5s;
 }
+.button-dropdown-1{
+    width: 38px;
+    height: 38px;
+    padding: 6px;
+}
+.button-dropdown-2{
+    width: 26px;
+    height: 26px;
+    padding: 12px;
+}
+.button-contained-img {
+    width: 20px;
+    height: 10px;
+}
+.dropdown-content {
+    display: none;
+    margin-top: 50px;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    z-index: 1;
+    right: 0;
+}
+.nama-profil{
+    display: none;
+    line-height: 50px;
+}
+
+.button-dropdown:hover .dropdown-content {
+    display: block;
+}
+.button-dropdown:hover .nama-profil{
+    transition-duration: 0.5s;
+    display: block;
+}
+
+.List-dropdown {
+    padding: 10px 20px;
+    color: black;
+}
+.List-dropdown:hover{
+    background-color: rgb(235, 235, 235);
+    transition-duration: 0.5s;
+}
+.style-svg {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-size: cover;
+    margin-right: 10px;
+}
+
 
 /* style navbarr yang lama vesi nadia */
 /* .navigation-bar{
