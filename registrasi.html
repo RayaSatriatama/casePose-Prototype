@@ -1,66 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>casePose | Sign Up</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/style_2.css">
-</head>
-<body>
-    <div class="container_login">
-        <div class="container_login_1">
-            <label class="roboto bold">CREATE your</label><br>
-            <label class="roboto bold">casePose account</label>
-        </div>
-        <div class="container_login_3">
-            <h2>Sign Up</h2>
-            <p class="sans-serif grey" style="font-size: 12px;margin-top: 10px;">Hello, Welcome to casePose. Thank you for joining us</p>
-            <p class="sans-serif grey" style="font-size: 12px;">create your account now!</p>
-            <div class="container_reg_1" style="margin-top: 10px;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>casePose | Sign Up</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/style_2.css">
+    </head>
+    <body>
+        <div class="container_login">
+            <div class="container_login_1">
+                <label class="roboto bold">CREATE your</label><br>
+                <label class="roboto bold">casePose account</label>
+            </div>
+            <div class="container_login_3">
+                <h2>Sign Up</h2>
+                <p class="sans-serif grey" style="font-size: 12px;margin-top: 10px;">Hello, Welcome to casePose. Thank you for joining us</p>
+                <p class="sans-serif grey" style="font-size: 12px;">create your account now!</p>
+                <div class="container_reg_1" style="margin-top: 10px;">
 
-                <div class="container_reg_1_1">
-                    <label for="firstname" class="sans-serif bold">First name</label>
-                    <input type="firstname" class="input_2" placeholder="Click here....." id="firstname">
+                    <div class="container_reg_1_1">
+                        <label for="firstname" class="sans-serif bold">First name</label>
+                        <input
+                            type="firstname"
+                            class="input_4"
+                            placeholder="Click here....."
+                            id="firstname"
+                            required="required">
+                    </div>
+
+                    <div class="container_reg_1_2">
+                        <label for="lastname" class="sans-serif bold">Last name</label>
+                        <input
+                            type="lastname"
+                            class="input_4"
+                            placeholder="Click here....."
+                            id="lastname">
+                    </div>
                 </div>
-
-                <div class="container_reg_1_2">
-                    <label for="lastname" class="sans-serif bold">Last name</label>
-                    <input type="lastname" class="input_2" placeholder="Click here....." id="lastname">
+                <div style="margin-top: 5px;">
+                    <label for="email" class="sans-serif bold">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="input_3"
+                        placeholder="Click here....."
+                        required="required"><br></div>
+                
+                <div style="margin-top: 5px;">
+                    <label for="password" class="sans-serif bold">Password</label><br>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="input_3"
+                        placeholder="Click here....."
+                        required="required"><br></div>
+                
+                <div style="margin-top: 5px;">
+                    <label for="sbpw" class="sans-serif bold">Submit password</label><br>
+                    <input
+                        type="sbpw"
+                        id="sbpw"
+                        name="sbpw"
+                        class="input_3"
+                        placeholder="Click here....."   
+                        required="required"><br><br><br></div>
+                <div>
+                    <label id="error-label-1" class="roboto bold red" style="display:none;">Inputan email harus benar</label>
+                    <label id="error-label-2" class="roboto bold red" style="display:none;">Password minimal 8 karakter</label>
+                    <label id="error-label-3" class="roboto bold red" style="display:none;">Inputan password dan submit password tidak sesuai</label>
+                    <label id="error-label-4" class="roboto bold red" style="display:none;">Pastikan data sudah terisi dengan lengkap</label>
                 </div>
-            </div><br>
-            <label for="email" class="sans-serif bold">Email</label>
-            <input type="email" id="email" name="email" class="input_1" placeholder="Click here....." required><br><br>
-            
-            <label for="password" class="sans-serif bold">Password</label><br>
-            <input type="password" id="password" name="password" class="input_1" placeholder="Click here....." required><br><br>
-
-            <label for="sbpw" class="sans-serif bold">Submit password</label><br>
-            <input type="sbpw" id="sbpw" name="sbpw" class="input_1" placeholder="Click here....." required><br><br><br>
-            <label id="error-label" class="roboto bold red" style="display:none;">Invalid email or password</label>
-            <a href="index.html" class="button_1" id="signUpButton">Sign Up</a><br><br>
-            
-            <p class="sans-serif grey" style="text-align: center;margin-top: 10px;">have an account? <a href="login.html" class="sans-serif" style="color: rgb(39, 115, 255); font-weight: bold;">Sign In</a></p>
+                <br>  
+                <a href="index.html" class="button_1" id="signUpButton">Sign Up</a><br>
+                <div style="margin-top: 15px;">
+                    <p class="sans-serif grey" style="text-align: center;margin-top: 10px;">have an account?
+                        <a
+                            href="login.html"
+                            class="sans-serif"
+                            style="color: rgb(39, 115, 255); font-weight: bold;">Sign In</a>
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-    <script>
-        document.getElementById("signUpButton").addEventListener("click", function(event) {
-            event.preventDefault();
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-            var sbpw = document.getElementById("sbpw").value; 
-           
-            // Validasi email, password, dan submit password
-            if (email === "leonardo@gmail.com" && password === "leonardo" && password === sbpw) {
-                // Redirect ke halaman dashboard jika registrasi berhasil
-                window.location.href = "after/index.html";
-            } else {
-                // Menampilkan label error jika registrasi gagal
-                var errorLabel = document.getElementById("error-label");
-                errorLabel.style.display = "block";
-            }
-        });
-    </script>
-    
-</body>
+        <script src="javascript/registrasi.js"></script>
+    </body>
 </html>
