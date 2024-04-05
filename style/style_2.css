@@ -65,3 +65,19 @@
     border-radius: 10px;    
     border: 2px solid rgb(218, 218, 218);
 }
+.input_3{
+    padding: 8px 16px;
+    width: 90%;
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.input_4{
+    padding:8px 16px;
+    width: 76%;
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 5px;
+}

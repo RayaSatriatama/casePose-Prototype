@@ -21,23 +21,23 @@
 
                 <div class="container_reg_1_1">
                     <label for="firstname" class="sans-serif bold">First name</label>
-                    <input type="firstname" class="input_2" placeholder="Click here....." id="firstname">
+                    <input type="firstname" class="input_4" placeholder="Click here....." id="firstname">
                 </div>
 
                 <div class="container_reg_1_2">
                     <label for="lastname" class="sans-serif bold">Last name</label>
-                    <input type="lastname" class="input_2" placeholder="Click here....." id="lastname">
+                    <input type="lastname" class="input_4" placeholder="Click here....." id="lastname">
                 </div>
             </div><br>
             <label for="email" class="sans-serif bold">Email</label>
-            <input type="email" id="email" name="email" class="input_1" placeholder="Click here....." required><br><br>
+            <input type="email" id="email" name="email" class="input_3" placeholder="Click here....." required><br><br>
             
             <label for="password" class="sans-serif bold">Password</label><br>
-            <input type="password" id="password" name="password" class="input_1" placeholder="Click here....." required><br><br>
+            <input type="password" id="password" name="password" class="input_3" placeholder="Click here....." required><br><br>
 
             <label for="sbpw" class="sans-serif bold">Submit password</label><br>
             <input type="sbpw" id="sbpw" name="sbpw" class="input_1" placeholder="Click here....." required><br><br><br>
-            <label id="error-label" class="roboto bold red" style="display:none;">Invalid email or password</label>
+            <label id="error-label-2" class="roboto bold red" style="display:none;">Invalid email or password</label>
             <a href="index.html" class="button_1" id="signUpButton">Sign Up</a><br><br>
             
             <p class="sans-serif grey" style="text-align: center;margin-top: 10px;">have an account? <a href="login.html" class="sans-serif" style="color: rgb(39, 115, 255); font-weight: bold;">Sign In</a></p>
@@ -56,7 +56,7 @@
                 window.location.href = "after/index.html";
             } else {
                 // Menampilkan label error jika registrasi gagal
-                var errorLabel = document.getElementById("error-label");
+                var errorLabel = document.getElementById("error-label-2");
                 errorLabel.style.display = "block";
             }
         });
