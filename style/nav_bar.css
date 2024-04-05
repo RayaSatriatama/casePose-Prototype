@@ -3,12 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 12rem;
     position: fixed;
     width: 100%;
     background-color: white;
     z-index: 99;
     transition: padding 0.5s;
+    padding: 12px 160px;
 }
 
 /* Media Queries */
