@@ -1,13 +1,13 @@
 /* Styles for the footer section */
 .footer {
+    margin-top: 5vw;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     gap: 60px;
     padding: 140px 160px 100px;
-    position: absolute;
-    top: 2000px;
+    position: relative;
     left: 0;
     background-color: rgba(3, 7, 18, 1);
     border-radius: 40px 40px 0px 0px;
