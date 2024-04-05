@@ -27,22 +27,7 @@
             <p class="grey " style="text-align: center;">New user? <a href="registrasi.html" class="roboto bold" style="color: rgb(39, 115, 255)">Sign up</a></p>
         </div>
     </div>
-    <script>
-        document.getElementById("signInButton").addEventListener("click", function() {
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-
-            // Validasi email dan password
-            if (email === "leonardo@gmail.com" && password === "leonardo") {
-                // Redirect ke halaman dashboard jika login berhasil
-                window.location.href = "after/index.html";
-            } else {
-                // Menampilkan label error jika login gagal
-                var errorLabel = document.getElementById("error-label");
-                errorLabel.style.display = "block";
-            }
-        });
-    </script>
+    <script src="javascript/login.js"></script>
 </body>
 
 </html>

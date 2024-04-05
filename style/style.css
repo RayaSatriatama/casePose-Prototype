@@ -27,7 +27,7 @@
     font-family: sans-serif;
 }
 .bold {
-    font-weight: bold;
+    font-weight: 700;
 }
 .container_login {
     margin: 0 auto;
@@ -83,6 +83,7 @@
 .button_1 {
     background-color: black;
     color: white;
+    font-size: 15px;
     padding: 12px 173px ;
     border-radius: 8px;
 }
