@@ -27,7 +27,10 @@
     font-family: sans-serif;
 }
 .bold {
-    font-weight: bold;
+    font-weight: 600;
+}
+.bold2 {
+    font-weight: 700;
 }
 .container_login {
     margin: 0 auto;
@@ -52,6 +55,8 @@
 
     width: 450px;
     padding: 60px 50px 0px 50px;
+    margin-top:-50px;
+
 }
 .container_login_3{
     width: 450px;
@@ -83,6 +88,7 @@
 .button_1 {
     background-color: black;
     color: white;
+    font-size: 15px;
     padding: 12px 173px ;
     border-radius: 8px;
 }
@@ -268,4 +274,24 @@
     left: 10; 
     display: none;
 }
+
+.back-arrow-container {
+    text-align: left; 
+    margin-top: 20px; 
+    position: relative;
+    top: -40px;
+    
+}
+
+.back-arrow {
+    color: #000; 
+    font-size: 40px; 
+    text-decoration: none;
+    
+}
+
+.back-arrow:hover {
+    color: #7b7b7b;
+}
+
 

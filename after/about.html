@@ -9,99 +9,124 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Link Style CSS -->
-    <link rel="stylesheet" href="style/nav_bar.css">
-    <link rel="stylesheet" href="style/footer.css" />
-    <link rel="stylesheet" href="style/globals.css" />
-    <link rel="stylesheet" href="style/card.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/style_2.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="../style/nav_bar.css">
+    <link rel="stylesheet" href="../style/globals.css">
+    <link rel="stylesheet" href="../style/style_about.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/card.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/style_2.css">
+    <title>About</title>
 </head>
 
 <body>
-<!-- Navigation Bar -->
+<!-- Navigation Bar after-->
 <div class="navbar">
     <div class="navbar-menu">
-        <a href="index.html" class="navbar-item active"><span class="navbar-text">Home</span></a>
-        <a href="about.html" class="navbar-item "><span class="navbar-text">About</span></a>
+        <a href="index.html" class="navbar-item "><span class="navbar-text">Home</span></a>
+        <a href="about.html" class="navbar-item active"><span class="navbar-text">About</span></a>
         <a href="pricing.html" class="navbar-item"><span class="navbar-text">Pricing</span></a>
     </div>
     <div class="navbar-divider"></div>
     <div class="navbar-actions">
-        <a href="login.html" class="navbar-button"><div class="navbar-button-text">Sign In</div></a>
-        <a href="login.html" class="navbar-button-alt"><div class="navbar-button-text-alt">Submit Project</div></a>
+        <a href="submit_project.html" class="navbar-button-alt"><div class="navbar-button-text-alt">Submit Project</div>
+        </a>
+
+        <div class="button-dropdown">
+            <div class="button-dropdown-1">
+                <div class="foto-profil" style="background-image: url('../asset/pp.png');"></div>
+                
+            </div>
+            <label for="" class="bold nama-profil" >Leonardo</label>
+            <div class="button-dropdown-2">
+                <img src="../asset/chevron-down.png" alt="" class="button-contained-img">
+            </div>
+            <div class="dropdown-content">
+                <a href="profil.html"><div class="List-dropdown">
+                    <div class="style-svg" style="background-image: url('../asset/svg/person.svg');"></div>
+                    <label for="" class="bold List-dropdown-label">My Profil</label>
+                </div></a>
+                <a href="../about.html"><div class="List-dropdown">
+                    <div class="style-svg" style="background-image: url('../asset/svg/box-arrow-right.svg');"></div>
+                    <label for="" class="bold List-dropdown-label">Logout</label>
+                </div></a>
+            </div>
+        </div>
     </div>
 </div> 
 <br><br><br>
-<!-- Header -->
-<div class="header-home">
-    <div id="text">
-      <p class="subtitle">INTRODUCTION TO</p>
-      <p class="title">Our Galery of <br/>Software Engineering’s Portfolio</p>
+<!-- content -->
+<div class="about">
+<div class="card-section">
+    <div class="card-content">
+        <div class="card-title">casePose</div>
+        <div class="card-details">
+            <div class="card-details-group">
+                <div class="card-subtitle">casePose</div>
+                <div class="card-year">© 2024</div>
+            </div>
+            <p class="card-description">
+                <span class="card-description-span">
+                    IS ONE OF PORTFOLIO WEBSITE AND IT’S DESIGN FOR SOFTWARE ENGINEERING STUDENTS AT<br/>
+                </span>
+                <span class="card-university">UNIVERSITAS PENDIDIKAN INDONESIA</span>
+            </p>
+        </div>
     </div>
-    <input type="text" id="search" class="text-field-icon" placeholder="Search">
-</div>
-    
-    
-<!-- List Card -->
-<div class="content_card">
-    <a href=""><div class="card">
-        <div class="card_image" style="background-image: url('asset/grab.png');">
-        <div class="card_image_hover"></div></div>
-        <h3 class="roboto bold">web portofolio</h3>
-        <label for="" class="roboto ">by Leonardo</label>
-    </div></a>
-    <a href=""><div class="card">
-        <div class="card_image" style="background-image: url('asset/card/Poster-Bsafe.jpg');">
-        <div class="card_image_hover"></div></div>
-        <h3 class="roboto bold">web portofolio</h3>
-        <label for="" class="roboto ">by Leonardo</label>
-    </div></a>
-    <a href=""><div class="card">
-        <div class="card_image" style="background-image: url('asset/card/Kode-Promo-Gojek.jpg');">
-        <div class="card_image_hover"></div></div>
-        <h3 class="roboto bold">web portofolio</h3>
-        <label for="" class="roboto ">by Leonardo</label>
-    </div></a>
-    <a href=""><div class="card">
-        <div class="card_image" style="background-image: url('asset/card/segari.jpg');">
-        <div class="card_image_hover"></div></div>
-        <h3 class="roboto bold">web portofolio</h3>
-        <label for="" class="roboto ">by Leonardo</label>
-    </div></a>
-    <a href=""><div class="card">
-        <div class="card_image" style="background-image: url('https://cloud.jpnn.com/photo/arsip/normal/2022/12/06/tagline-baru-untuk-melayani-traveler-tanah-air-foto-dok-trav-hkwf.jpg');">
-        <div class="card_image_hover"></div></div>
-        <h3 class="roboto bold">web portofolio</h3>
-        <label for="" class="roboto ">by Leonardo</label>
-    </div></a>
-    <a href=""><div class="card">
-        <div class="card_image" style="background-image: url('https://play-lh.googleusercontent.com/qdMdHgFdofGnk3uY060K0w5QHre-CUSMhVc0NJZ5MmS6nkL46LGVTCAxp-4UsVS00A=w526-h296-rw');">
-        <div class="card_image_hover"></div></div>
-        <h3 class="roboto bold">web portofolio</h3>
-        <label for="" class="roboto ">by Leonardo</label>
-    </div></a>
-    <a href=""><div class="card">
-        <div class="card_image" style="background-image: url('https://bapenda.jabarprov.go.id/wp-content/uploads/2016/09/Samsat-Mobile-Online-Jabar.jpg');">
-        <div class="card_image_hover"></div></div>
-        <h3 class="roboto bold">web portofolio</h3>
-        <label for="" class="roboto ">by Leonardo</label>
-    </div></a>
-    <a href=""><div class="card">
-        <div class="card_image" style="background-image: url('https://daoinsights.com/wp-content/uploads/2023/08/lemon8-again-2.jpg');">
-        <div class="card_image_hover"></div></div>
-        <h3 class="roboto bold">web portofolio</h3>
-        <label for="" class="roboto ">by Leonardo</label>
-    </div></a>
-    <a href=""><div class="card">
-        <div class="card_image" style="background-image: url('https://www.el-shai.com/wp-content/uploads/2021/02/viu.jpg');">
-        <div class="card_image_hover"></div></div>
-        <h3 class="roboto bold">web portofolio</h3>
-        <label for="" class="roboto ">by Leonardo</label>
-    </div></a>
-</div>
-<br>
-    
+</div>   
+<div class="message-section">
+    <div class="message-section-inner">
+        <div class="message-section-title">SAY HI TO</div>
+        <div class="message-section-subtitle">Our Lovely Team</div>
+    </div>
+    <p class="message-section-paragraph">
+        We are students of software engineering at Universitas Pendidikan Indonesia, Bandung, Indonesia. This website
+        is built using HTML, CSS and Javascript. It is also used for one of the course assignments of
+        Website Programming and Database Technology. Here’s an introduction to Pose's Team.
+    </p>
+</div>  
+<div class="team-container">
+    <div class="team-section">
+        <div class="team-member">
+            <div class="team-image">
+                <img src="../asset/member/farhan.jpg" alt="Team Image">
+            </div>  
+            <div class="team-info">
+                <div class="member-name">Farhan Angga Riyanto<br>(2209226)</div>
+                <div class="member-role">as Leader</div>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-image">
+                <img src="../asset/member/raya.jpg" alt="Team Image">
+            </div>                        
+            <div class="team-info">
+                <div class="member-name">Mohammad Raya Satriatama<br>(2206418)</div>
+                <div class="member-role">as Member</div>
+            </div>
+        </div>
+    </div>
+    <div class="team-section">
+        <div class="team-member">
+            <div class="team-image">
+                <img src="https://c.animaapp.com/tjFjNvMJ/img/image-3.png" alt="Team Image">
+            </div>  
+            <div class="team-info">
+                <div class="member-name">Nadia Aqmarina Ghaisany<br>(2202012)</div>
+                <div class="member-role">as Member</div>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-image">
+                <img src="../asset/member/akmal.jpg" alt="Team Image">
+            </div>  
+            <div class="team-info">
+                <div class="member-name">Akmal Hadi Syaputra<br>(2200457)</div>
+                <div class="member-role">as Member</div>
+            </div>
+        </div>
+    </div>
+</div></div>
 <!-- Footer -->
 <footer class="footer">
     <div class="footer-navigation">

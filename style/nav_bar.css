@@ -1,5 +1,5 @@
-/* Navbar */
 .navbar {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +63,7 @@
 }
 
 /* Navbar Styles */
-.navbar .navbar-menu {
+.navbar-menu {
     display: inline-flex;
     align-items: center;
     gap: 16px;
@@ -87,17 +87,17 @@
     text-decoration: none;
 }
 
-.navbar .navbar-item.active, .navbar .navbar-item:hover {
+.navbar-item.active, .navbar-item:hover {
     border-bottom: 2px solid #0F172A;
     font-weight: 700;
 }
 
 /* Text Styles */
-.navbar .navbar-text {
+.navbar-text {
     display: block;
 }
 
-.navbar .navbar-button-text {
+.navbar-button-text {
     display: inline-flex;
     align-items: center;
     gap: 16px;
@@ -113,7 +113,7 @@
 }
 
 /* Actions Styles */
-.navbar .navbar-actions {
+.navbar-actions {
     display: inline-flex;
     align-items: center;
     justify-content: flex-end;
@@ -134,7 +134,7 @@
     transition: background-color 0.3s, fill 0.3s;
 }
 
-.navbar .navbar-button {
+.navbar-button {
     background-color: rgba(255, 255, 255, 1);
     color: rgba(3, 7, 18, 1);
 }
@@ -156,7 +156,7 @@
 }
 
 /* Text Styles */
-.navbar .navbar-button-text, .navbar .navbar-button-text-alt {
+.navbar-button-text, .navbar-button-text-alt {
     position: relative;
     font-family: Roboto;
     font-weight: 600;

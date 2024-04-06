@@ -1,9 +1,4 @@
-/* Global Reset */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+/* Global Reset dipindahin farhan ke style about*/
 
 /* Global Styles */
 html {
