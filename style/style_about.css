@@ -1,3 +1,29 @@
+/* Global Styles */
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 560px) {
+    html {
+        font-size: 14px;
+    }
+}
 
 .about {
     box-sizing: border-box;
