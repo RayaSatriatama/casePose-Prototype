@@ -55,6 +55,8 @@
 
     width: 450px;
     padding: 60px 50px 0px 50px;
+    margin-top:-50px;
+
 }
 .container_login_3{
     width: 450px;
@@ -276,12 +278,16 @@
 .back-arrow-container {
     text-align: left; 
     margin-top: 20px; 
+    position: relative;
+    top: -40px;
+    
 }
 
 .back-arrow {
     color: #000; 
     font-size: 40px; 
     text-decoration: none;
+    
 }
 
 .back-arrow:hover {
