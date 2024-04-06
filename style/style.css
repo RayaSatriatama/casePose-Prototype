@@ -27,6 +27,9 @@
     font-family: sans-serif;
 }
 .bold {
+    font-weight: 600;
+}
+.bold2 {
     font-weight: 700;
 }
 .container_login {
