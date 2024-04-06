@@ -99,11 +99,31 @@
     }
 }
 
+@media (width <= 600px) {
+    .about .card-section {
+        margin: 120px 0 30px 0;
+    }
+}
+
 @media (width <= 560px) {
     .about .card-description {
         text-align: center;
         max-width: 240px;
         font-size: 10px;
+    }
+
+    .about .card-section {
+        padding: 0;
+    }
+    
+    .about .card-content {
+        border-radius: 0;
+    }
+}
+
+@media (width <= 480px) { 
+    .about .card-content {
+        height: calc((300 / 480) * 100vw);
     }
 }
 
@@ -203,8 +223,19 @@
     }
 }
 
+@media (width > 768px) {
+    .about .message-section {
+        margin: 2.083vw 0;
+    }
+}
+
+@media (width <= 768px) {
+    .about .message-section {
+        margin-bottom: 100px;
+    }
+}
+
 .about .message-section {
-    margin: 2.083vw 0;
     display: flex;
     flex-direction: column;
     max-width: 1440px;
