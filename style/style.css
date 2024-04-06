@@ -27,6 +27,9 @@
     font-family: sans-serif;
 }
 .bold {
+    font-weight: 600;
+}
+.bold2 {
     font-weight: 700;
 }
 .container_login {
@@ -268,5 +271,20 @@
     top: 415px; 
     left: 10; 
     display: none;
+}
+
+.back-arrow-container {
+    text-align: left; 
+    margin-top: 20px; 
+}
+
+.back-arrow {
+    color: #000; 
+    font-size: 40px; 
+    text-decoration: none;
+}
+
+.back-arrow:hover {
+    color: #7b7b7b;
 }
 
