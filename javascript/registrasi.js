@@ -12,45 +12,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let isValid = true;
 
-        if (!firstname || !lastname) {
+        // Validasi Inputan
+        if (!firstname || !lastname || !email || !password || !sbpw) {
             errorLabel2.style.marginTop = '10px';
             errorLabel2.textContent = 'Make sure the data is filled in completely';
             errorLabel2.style.display = 'block';
             isValid = false;
-        }
+        } else {
+            // Validasi Email
+            const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+            if (!emailRegex.test(email)) {
+                errorLabel2.style.marginTop = '10px';
+                errorLabel2.textContent = 'Email input must be correct';
+                errorLabel2.style.display = 'block';
+                isValid = false;
+            }
 
-        // Validasi Email
-        const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-        if (!emailRegex.test(email)) {
-            errorLabel2.style.marginTop = '10px';
-            errorLabel2.textContent = 'Email input must be correct';
-            errorLabel2.style.display = 'block';
-            isValid = false;
-        }
-
-        // Validasi Password dan Submit Password
-        if (password !== sbpw) {
-            errorLabel2.style.marginTop = '10px';
-            errorLabel2.textContent = 'Input password and submit password do not match';
-            errorLabel2.style.display = 'block';
-            isValid = false;
-        } else if (password.length < 8) {
-            errorLabel2.style.marginTop = '10px';
-            errorLabel2.textContent = 'Password must be at least 8 characters';
-            errorLabel2.style.display = 'block';
-            isValid = false;
-        }
-
-        // Validasi Inputan
-        if (!email || !password || !sbpw) {
-            errorLabel2.style.marginTop = '10px';
-            errorLabel2.getElement = 'Make sure the data is filled in completely';
-            errorLabel2.style.display = 'block';
-            isValid = false;
+            // Validasi Password dan Submit Password
+            if (password !== sbpw) {
+                errorLabel2.style.marginTop = '10px';
+                errorLabel2.textContent = 'Input password and submit password do not match';
+                errorLabel2.style.display = 'block';
+                isValid = false;
+            } else if (password.length < 8) {
+                errorLabel2.style.marginTop = '10px';
+                errorLabel2.textContent = 'Password must be at least 8 characters';
+                errorLabel2.style.display = 'block';
+                isValid = false;
+            }
         }
 
         if (isValid) {
-            // Proses pendaftaran jika semua validasi lulus
+            // jika semua validasi lulus, maka masuk ke next page
             window.location.href = "after/index.html";
         }
     });
