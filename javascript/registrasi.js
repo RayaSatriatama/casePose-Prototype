@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             isValid = false;
         } else {
             // Validasi Email
-            // untuk memastikan email berakhir dengan @upi.edu
+            // untuk memastikan email berakhir dengan fromat @upi.edu
             const emailRegex = /^[\w-]+(\.[\w-]+)*@upi\.edu$/;
             if (!emailRegex.test(email)) {
                 errorLabel2.style.marginTop = '10px';
