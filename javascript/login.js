@@ -9,7 +9,6 @@ document.getElementById("signInButton").addEventListener("click", function() {
         errorLabel.innerHTML = "Make sure the input data is filled in completely";
         return; // Menghentikan eksekusi fungsi jika email atau password kosong
     }
-
     // Validasi email dan password
     if (email === "leonardo@upi.edu" && password === "leonardo") {
         // Redirect ke halaman dashboard jika login berhasil
