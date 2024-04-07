@@ -1,14 +1,14 @@
 .content-detail-1{
-    width: 1000px;
-    height: 550px;
-    border-radius: 20px;
+    width: 69.444vw;
+    height: 38.194vw;
+    border-radius: 1.389vw;
     background-size: cover;
     border: 2px solid rgb(239, 239, 239);
 }
 
 .content-detail-desc{
     height: 250px;
-    width: 650px;
+    width: 45.139vw;
     display: block;
 }
 
@@ -20,13 +20,16 @@
     height: 600px;
 }
 .more-project-1{
-    width: 650px;
+    width: 45.139vw;
     display: block;
 }
 .more-project-2 {
-    width: 1100px;
+    width: 76.389vw;
     display: flex;
     text-align: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .more-project-label {
     font-size: 30px;
@@ -89,7 +92,7 @@
     border-bottom: 2px solid black;
 }
 .content-detail-list-content {
-    line-height: 60px;
+    line-height: 4.167vw;
     justify-content: flex-start;
     height: 60px;
     margin: 0px 20px;
@@ -100,5 +103,5 @@
 }
 .lbl {
     float: left ;
-    width: 150px;
+    width: 10.417vw;
 }
