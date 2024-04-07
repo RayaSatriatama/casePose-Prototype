@@ -59,6 +59,7 @@
     gap: 16px;
     position: relative;
     flex: 0 0 auto;
+    flex-wrap: wrap;
 }
 
 /* Styling for each frame within the footer */
@@ -181,7 +182,6 @@
 .footer-text-wrapper-2 {
     font-weight: 500;
     font-size: 64px;
-    line-height: 89.6px;
     font-family: "Roboto", Helvetica;
     color: rgba(255, 255, 255, 1);
     text-align: center;
@@ -200,10 +200,10 @@
 
 @media (max-width: 480px) {
     .footer-text-wrapper-2{
-        font-size: 48px;
+        font-size: 10vw;
     }
 
     .footer-text-wrapper-3 {
-        font-size: 24px;
+        font-size: 5vw;
     }
 }
