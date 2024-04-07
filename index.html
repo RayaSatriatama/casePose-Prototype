@@ -30,29 +30,13 @@
             <a href="about.html" class="navbar-item"><span class="navbar-text">About</span></a>
             <a href="pricing.html" class="navbar-item"><span class="navbar-text">Pricing</span></a>
         </div>
-        <div class="navbar-logo"></div>
+        <div class="navbar-logo"><a href="index.html"><img src="../asset/logo/logo_2.png" alt=""></a></div>
         <div class="navbar-actions">
             <a href="login.html" class="navbar-button"><div class="navbar-button-text">Sign In</div></a>
             <a href="submit-project.html" class="navbar-button-alt"><div class="navbar-button-text-alt">Submit Project</div></a>
         </div>
     </div>
-    <script>
-        document.querySelector('.navbar-toggle-button').addEventListener('click', function() {
-            document.querySelector('.navbar').classList.toggle('show');
-        });
-
-        var button = document.querySelector('.navbar-toggle-button');
-        var isClicked = false;
-
-        function toggleColor() {
-            isClicked = !isClicked;
-            if (isClicked) {
-                button.classList.add('clicked');
-            } else {
-                button.classList.remove('clicked');
-            }
-        }
-    </script>
+    <script src="javascript/navbar.js"></script>
 </nav>
 <br><br><br>
 <!-- Header -->
