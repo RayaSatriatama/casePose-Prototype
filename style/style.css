@@ -94,6 +94,7 @@
     font-size: 15px;
     padding: 12px 173px ;
     border-radius: 8px;
+    padding-right: 181px;
 }
 .button_1:hover{
     background-color: rgb(31, 31, 31);
