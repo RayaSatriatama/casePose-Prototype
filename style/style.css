@@ -204,17 +204,53 @@
 }
 
 /* Contain halaman home */
-.header-home{
+@media (width > 768px) {
+    .header-home {
+        width: 700px;
+    }
+
+    .text-field-icon {
+        width: 500px;
+    }
+}
+
+@media (width <= 768px) {
+    .header-home {
+        width: 91.146vw;
+    }
+
+    .text-field-icon {
+        width: 65.104vw;
+    }
+}
+
+@media (width > 560px) {
+    .header-home {
+        height: 200px;
+    }
+    
+    .header-home .title {
+        font-size: 32px; 
+    }
+}
+
+@media (width <= 560px) {
+    .header-home {
+        width: 85vw;
+        height: auto;
+    }
+}
+
+.header-home {
     margin: 40px auto;
-    width: 700px;
-    height: 200px;
+    
     text-align: center;
 }
 
 .title{
     text-align: center; 
     color: #111827; 
-    font-size: 32px; 
+    font-size: 32px;
     font-family: Roboto; 
     font-weight: 500; 
     line-height: 44.80px; 
@@ -239,7 +275,6 @@
     margin-bottom: 32px;
 }
 .text-field-icon{
-    width: 500px;
     height: 54px;
     box-sizing: border-box;
     padding: 12px 32px 12px 52px;
