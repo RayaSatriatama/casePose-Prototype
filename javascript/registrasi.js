@@ -20,10 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
             isValid = false;
         } else {
             // Validasi Email
-            const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+            // untuk memastikan email berakhir dengan fromat @upi.edu
+            const emailRegex = /^[\w-]+(\.[\w-]+)*@upi\.edu$/;
             if (!emailRegex.test(email)) {
                 errorLabel2.style.marginTop = '10px';
-                errorLabel2.textContent = 'Email input must be correct';
+                errorLabel2.textContent = 'Email input must be in the format @upi.edu';
                 errorLabel2.style.display = 'block';
                 isValid = false;
             }
