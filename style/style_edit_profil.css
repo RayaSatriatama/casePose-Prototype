@@ -87,6 +87,7 @@ textarea{
     flex: 0 0 auto;
     border-radius: 12px;
     border: 1px solid;
+    transition-duration: 0.5s;
     border-color: rgba(233, 233, 235, 1);
 }
 
@@ -97,8 +98,7 @@ textarea{
     font-family: Roboto;
     font-weight: 600;
     line-height: 16px;
-    word-wrap: break-word
-    display: flex;
+    word-wrap: break-word;
     align-items: center;
     padding: 16px;
     position: relative;
@@ -108,6 +108,10 @@ textarea{
     border-radius: 4px;
 }
 
+.navigation :hover {
+    background-color: rgba(241, 245, 249, 1);
+    transition-duration: 0.5;
+}
 
 .side-navigation .inactive {
     color: rgba(17, 24, 39, 1);
