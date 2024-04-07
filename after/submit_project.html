@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="../style/nav_bar.css">
     <link rel="stylesheet" href="../style/style-submit-project.css">
     <link rel="stylesheet" href="../style/footer.css" />
-    <link rel="stylesheet" href="../style/card.css">
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/style_2.css">
     <title>Submit Project</title>
 </head>
 
@@ -38,7 +36,6 @@
             <div class="button-dropdown">
                 <div class="button-dropdown-1">
                     <div class="foto-profil" style="background-image: url('../asset/pp.png');"></div>
-                    
                 </div>
                 <label for="" class="bold nama-profil" >Leonardo</label>
                 <div class="button-dropdown-2">
@@ -60,18 +57,68 @@
     <script src="../javascript/navbar.js"></script>
 </nav>
 <br><br><br>
+
 <!-- content -->
-<div class="content-submit-project">
-    <div class="sp-side-bar">
+<script src="../javascript/submit.js"></script>
+<div class="content">
+    <div class="side-navigation">
+        <button class="button-contained" type="button"  ><img src="../asset/chevron-left.png">Back</button>
+        <button class="button-contained" type="button"  ><img src="../asset/chevron-left.png">Back</button>
+        <button class="button-contained" type="button"  ><img src="../asset/chevron-left.png">Back</button>
+        <div class="navigation">
+            <div id="PI" class="active">
+                <label for="">Project Information</label>
+            </div>
+            <div id="UP" class="inactive">
+                <label for="">Upload Project</label>
+            </div>
+            <div id="ADD" class="inactive">
+                <label for="">Additional</label>
+            </div>  
+        </div>
     </div>
-    <div class="content-side-bar">
-        <div class="content-side-bar-1">
+
+    <div class="content-side">
+        <div id="content-side-bar-1" class="content-side-bar" >
+            <label for="" class="bold">Project Title</label><br>
+            <input type="text" class="input-link" placeholder="Click Here....."><br><br>
+            <label for="" class="bold">Project Description</label><br>
+            <textarea type="text" class="input-desc" placeholder="Click Here....."></textarea><br><br>  
+
+            <div class="div-footer">
+                <button id="cancel1" class="button-1 bold2">Cancel</button>
+                <button onclick="nextStep1()" class="button-2 bold2">Next</button>
+            </div>
 
         </div>
-        <div class="content-side-bar-2">
+        <div id="content-side-bar-2" class="content-side-bar" style="display: none;">
+            <label for="" class="bold">Upload Project</label>
+            <div class="div-upload">
+                <img src="../asset/svg/document-arrow-up.png" alt=""><br>
+                <label for="" class="blue bold">Upload a file</label><label for="" class="bold"> or drag and drop</label><br>
+                <label for="" class="grey bold">PNG and JPG up o 10MB</label>
+            </div>
+            <label for="" class="bold"> Link Project</label><br>
+            <input type="text" class="input-link" placeholder="Click Here....."><br><br>
 
+            <div class="div-footer">
+                <button id="cancel2" class="button-1 bold2">Cancel</button>
+                <button onclick="nextStep2()" class="button-2 bold2">Next</button>
+            </div>
         </div>
-        <div class="content-side-bar-3">
+        <div id="content-side-bar-3" class="content-side-bar" style="display: none;">
+            <label for="" id="tags" class="bold">tags</label><br>
+            <input type="text" class="input-link" placeholder="Click Here....."><br><br>
+            <label for="" class="bold">Categories</label><br>
+            <input type="text" class="input-link" placeholder="Click Here....."><br><br>
+
+            <div class="div-footer">
+                <button id="cancel3" class="button-1 bold2">Cancel</button>
+                <button id="next1" class="button-2 bold2">Publish Now</button>
+            </div>
+        </div>
+
+        <div class="message">
 
         </div>
     </div>

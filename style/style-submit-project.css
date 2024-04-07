@@ -1,0 +1,171 @@
+.content{
+    margin: 60px 160px 260px 160px;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    flex-direction: row;
+    gap: 20px; 
+    display: inline-flex;
+}
+
+a{
+    color: rgba(17, 24, 39, 1);
+}
+
+.side-navigation {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.side-navigation .button-contained {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    width: 360px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 20px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: rgba(233, 233, 235, 1);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.side-navigation img {
+    margin: 0;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.side-navigation .navigation {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 12px;
+    border: 1px solid;
+    transition-duration: 0.5s;
+    border-color: rgba(233, 233, 235, 1);
+}
+
+.side-navigation .active {
+    gap: 10px;
+    background-color: rgba(241, 245, 249, 1);
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 16px;
+    word-wrap: break-word;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border-radius: 4px;
+}
+
+
+.side-navigation .inactive {
+    color: rgba(17, 24, 39, 1);
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border-radius: 4px;
+}
+
+.content {
+
+}
+.content-side-bar {
+    width: 760px;
+    padding: 20px; 
+    border-radius: 6px;
+    border: 1px solid rgba(233, 233, 235, 1);  
+}
+.div-upload {
+    padding: 100px;
+    margin: 10px 0px;
+    width: 100%;
+    border: 1px solid rgba(233, 233, 235, 1);
+    border-radius: 6px;
+}
+.input-link {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid rgba(233, 233, 235, 1);
+    border-radius: 6px;
+}
+.input-desc {
+    margin-top: 10px;
+    padding: 12px;
+    height: 100px;
+    width: 100%;
+    border: 1px solid rgba(233, 233, 235, 1);
+    border-radius: 6px;
+}
+.div-footer {
+    display: flex;
+    gap: 20px;
+}
+.button-1{
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid rgba(233, 233, 235, 1);
+    padding: 12px;
+    width: 50%;
+    transition: 0.2s;
+}
+.button-1:hover{
+    transition-duration: 0.2s;
+    color: white;
+    background-color: black;
+}
+.button-2{
+    background-color: black;
+    border-radius: 6px;
+    color: white;
+    border: 1px solid rgba(233, 233, 235, 1);
+    padding: 12px;
+    transition-duration: 0.2s;
+    width: 50%;
+}
+.button-2:hover{
+    transition-duration: 0.2s;
+    color: black;
+    background-color: white ;
+    border-color: black;
+}
+.div-upload {
+    text-align: center;    
+}
+
+.div-upload img {
+    width: 60px;
+}

@@ -1,5 +1,4 @@
 *{
-    padding: 0px;
     text-decoration: none;
     list-style: none;
     margin: 0 auto;
@@ -7,6 +6,9 @@
 }
 .black{
     color: black;
+}
+.blue{
+    color: rgb(39, 115, 255);
 }
 .white{
     color: white;
