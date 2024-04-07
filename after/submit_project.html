@@ -62,18 +62,21 @@
 <script src="../javascript/submit.js"></script>
 <div class="content">
     <div class="side-navigation">
-        <button class="button-contained" type="button"  ><img src="../asset/chevron-left.png">Back</button>
-        <button class="button-contained" type="button"  ><img src="../asset/chevron-left.png">Back</button>
-        <button class="button-contained" type="button"  ><img src="../asset/chevron-left.png">Back</button>
+        <a id="back1" href="index.html" class="button-contained" onclick="goBack1()""><img src="../asset/chevron-left.png">Back</a>
+        <button id="back2"class="button-contained" type="button"  onclick="goBack2()" style="display: none;"><img src="../asset/chevron-left.png">Back</button>
+        <button id="back3" class="button-contained" type="button"  onclick="goBack3()" style="display: none;"><img src="../asset/chevron-left.png">Back</button>
         <div class="navigation">
             <div id="PI" class="active">
-                <label for="">Project Information</label>
+                <label for="" >Project Information</label>
+                <img src="../asset/svg/check.svg" alt="">
             </div>
             <div id="UP" class="inactive">
                 <label for="">Upload Project</label>
+                <img src="../asset/svg/check.svg" alt="">
             </div>
             <div id="ADD" class="inactive">
                 <label for="">Additional</label>
+                <img src="..//asset/svg/check.svg" alt="">
             </div>  
         </div>
     </div>
@@ -87,7 +90,7 @@
 
             <div class="div-footer">
                 <button id="cancel1" class="button-1 bold2">Cancel</button>
-                <button onclick="nextStep1()" class="button-2 bold2">Next</button>
+                <button class="button-2 bold2" onclick="nextStep1()">Next</button>
             </div>
 
         </div>
@@ -103,7 +106,7 @@
 
             <div class="div-footer">
                 <button id="cancel2" class="button-1 bold2">Cancel</button>
-                <button onclick="nextStep2()" class="button-2 bold2">Next</button>
+                <button class="button-2 bold2" onclick="nextStep2()">Next</button>
             </div>
         </div>
         <div id="content-side-bar-3" class="content-side-bar" style="display: none;">

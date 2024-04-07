@@ -39,6 +39,11 @@ a{
     font-style: normal;
     font-weight: 600;
     line-height: 100%;
+    transition-duration: 0.2s;
+}
+.button-contained:hover {
+    background-color: rgba(241, 245, 249, 1);
+    transition-duration: 0.2s;
 }
 
 .side-navigation img {
@@ -80,7 +85,22 @@ a{
     flex: 0 0 auto;
     border-radius: 4px;
 }
-
+.side-navigation .finis {
+    gap: 10px;
+    background-color:rgb(187, 222, 190);
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 16px;
+    word-wrap: break-word;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border-radius: 4px;
+}
 
 .side-navigation .inactive {
     color: rgba(17, 24, 39, 1);
@@ -98,9 +118,12 @@ a{
     flex: 0 0 auto;
     border-radius: 4px;
 }
-
-.content {
-
+.finis img {
+    float:right;
+}
+.inactive img,.active img{
+    float:right;
+    display:none;
 }
 .content-side-bar {
     width: 760px;
