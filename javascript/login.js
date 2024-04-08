@@ -9,6 +9,6 @@ document.getElementById("signInButton").addEventListener("click", function() {
     } else {
         // Menampilkan label error jika login gagal
         var errorLabel = document.getElementById("error-label");
-        errorLabel.style.display = "block";
+        errorLabel.style.visibility = "visible";
     }
 });

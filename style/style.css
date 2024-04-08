@@ -36,30 +36,48 @@
 }
 
 .container_login {
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
     height: 550px;
     width: 1000px;
     background-color: white;
-    display: flex;
     font-family: sans-serif;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.25);
 }
+
 .container_login_1{
     background-image: url('../asset/frame1.png');
-    background-size: 500px;
-    width: 510px;
-    font-size: 25px;
+    background-size: cover;
+    width: 50%;
     color: white;
-    padding: 250px 0px 100px 40px;
+    padding: 225px 0px 0px 54px;
+}
+.container_login_1 #\31 {
+    font-size: 64px;
+}
+.container_login_1 #\32 {
+    font-size: 36px;
 }
 .container_login_2{
-
-    width: 450px;
-    padding: 60px 50px 0px 50px;
-    margin-top:-50px;
-
+    width: 50%;
+    padding: 10px 50px 0px 50px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.container_login_2 *, .container_login_1 * {
+    margin: 0;
+}
+.container_login_2 h1 {
+    margin: 10px 0 18px;
+}
+.container_login_2 .sans-serif.bold {
+    margin: 16px 0 8px;
 }
 .container_login_3{
     width: 450px;
@@ -73,12 +91,10 @@
     margin-right: 20px;
 }
 .input_1{
-    padding: 10px 20px;
-    width: 90%;
+    padding: 12px;
     border: 2px solid rgb(206, 206, 206);
-    border-radius: 8px;
-    font-size: 15px;
-    margin-top: 5px;
+    border-radius: 6px;
+    font-size: 14px;
 }
 .input_2{
     padding: 10px 20px;
@@ -88,12 +104,19 @@
     font-size: 15px;
     margin-top: 5px;
 }
+#error-label {
+    display: grid;
+    visibility: hidden;
+}
 .button_1 {
     background-color: black;
     color: white;
     font-size: 15px;
-    padding: 12px 173px ;
+    padding: 12px 0;
     border-radius: 8px;
+    width: 100%;
+    margin: 40px 0 20px;
+    font-weight: 600;
 }
 .button_1:hover{
     background-color: rgb(31, 31, 31);
@@ -322,10 +345,13 @@
 }
 
 .back-arrow {
-    color: #000; 
-    font-size: 40px; 
+    color: #000;
+    font-size: 40px;
     text-decoration: none;
-    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
 }
 
 .back-arrow:hover {
