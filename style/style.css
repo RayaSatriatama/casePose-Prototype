@@ -86,7 +86,7 @@
 .container_login_1{
     background-image: url('../asset/frame1.png');
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     width: 50%;
     color: white;
     padding: 225px 0px 0px 54px;
