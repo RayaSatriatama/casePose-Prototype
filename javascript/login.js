@@ -5,7 +5,7 @@ document.getElementById("signInButton").addEventListener("click", function() {
     // Pengecekan kosong email dan password
     if (email === "" || password === "") {
         var errorLabel = document.getElementById("error-label");
-        errorLabel.style.display = "block";
+        errorLabel.style.visibility = "visible";
         errorLabel.innerHTML = "Make sure the input data is filled in completely";
         return; // Menghentikan eksekusi fungsi jika email atau password kosong
     }
