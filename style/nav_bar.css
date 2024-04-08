@@ -13,6 +13,7 @@
     z-index: 99;
     transition: padding 0.5s;
     padding: 12px 160px;
+    transition: width 0.5s ease-in-out;
 }
 
 /* Media Queries */
@@ -303,14 +304,14 @@
     margin: auto 0;
     position: relative;
     display: flex;
-    transition: 0.5s;
+    transition: 0.5s ease-out;
 }
 
 .button-dropdown:hover{
     border-radius: 7px 7px 0px 0px;
     width: 200px;
-    background-color: #d3e7fb;
-    transition-duration: 0.5s;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.5s ease-out;
 }
 
 .button-dropdown-1{
@@ -362,7 +363,7 @@
 
 .List-dropdown:hover{
     background-color: rgb(235, 235, 235);
-    transition-duration: 0.5s;
+    transition-duration: 0.5s ease-out;
 }
 
 .style-svg {
