@@ -1,7 +1,30 @@
 *{
+    box-sizing: border-box;
     margin: 0 auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+@media (width < 1024px) { 
+    .container_login_3 {
+        margin: 0 !important;
+        width: 100% !important;
+        min-height: 850px !important;
+        flex-direction: column;
+        align-items: stretch !important;;
+        box-shadow: none !important;
+        justify-content: normal !important;
+    }
+
+    .container_login_3.grey {
+        margin: 150px 0 !important;
+    }
+
+    .container_login_3 {
+        width: 100% !important;
+        padding: 20px 15.625vw 0 !important;
+    }
+}
+
 .button_2 {
     background-color: black;
     color: white;
@@ -68,20 +91,17 @@
     border: 2px solid rgb(213, 213, 213);
 }
 .input_3{
-    padding: 8px 16px;
-    width: 90%;
+    padding: 8px 12px;
     border: 2px solid rgb(206, 206, 206);
-    border-radius: 8px;
-    font-size: 15px;
-    margin-top: 5px;
+    border-radius: 6px;
+    font-size: 14px;
 }
 .input_4{
-    padding:8px 16px;
-    width: 76%;
+    padding: 8px 12px;
+    width: 100%;
     border: 2px solid rgb(206, 206, 206);
     border-radius: 8px;
-    font-size: 15px;
-    margin-top: 5px;
+    font-size: 14px;
 }
 .profil-desc-about{
     width: 250px;

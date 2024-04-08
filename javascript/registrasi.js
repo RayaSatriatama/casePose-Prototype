@@ -14,31 +14,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Validasi Inputan
         if (!firstname || !lastname || !email || !password || !sbpw) {
-            errorLabel2.style.marginTop = '10px';
             errorLabel2.textContent = 'Make sure the data is filled in completely';
-            errorLabel2.style.display = 'block';
+            errorLabel2.style.visibility = 'visible';
             isValid = false;
         } else {
             // Validasi Email
             // untuk memastikan email berakhir dengan fromat @upi.edu
             const emailRegex = /^[\w-]+(\.[\w-]+)*@upi\.edu$/;
             if (!emailRegex.test(email)) {
-                errorLabel2.style.marginTop = '10px';
                 errorLabel2.textContent = 'Email input must be in the format @upi.edu';
-                errorLabel2.style.display = 'block';
+                errorLabel2.style.visibility = 'visible';
                 isValid = false;
             }
-
             // Validasi Password dan Submit Password
             if (password !== sbpw) {
-                errorLabel2.style.marginTop = '10px';
                 errorLabel2.textContent = 'Input password and submit password do not match';
-                errorLabel2.style.display = 'block';
+                errorLabel2.style.visibility = 'visible';
                 isValid = false;
             } else if (password.length < 8) {
-                errorLabel2.style.marginTop = '10px';
                 errorLabel2.textContent = 'Password must be at least 8 characters';
-                errorLabel2.style.display = 'block';
+                errorLabel2.style.visibility = 'visible';
                 isValid = false;
             }
         }

@@ -105,28 +105,39 @@
     flex-direction: column;
     justify-content: center;
 }
-.container_login_2 *, .container_login_1 * {
+.container_login_1 *, .container_login_2 *, .container_login_3 * {
     margin: 0;
 }
-.container_login_2 h1 {
+h1 {
     margin: 10px 0 18px;
 }
-.container_login_2 .sans-serif.bold {
+.container_login_2 .roboto.bold.bold {
+    font-size: 14px;
     margin: 16px 0 8px;
 }
-.container_login_3{
-    width: 450px;
-    padding: 30px 50px 0px 50px;
-    position: relative;
+.container_login_3 {
+    width: 50%;
+    padding: 0 50px 0px 50px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container_login_3 .roboto.bold {
+    font-size: 14px;
+    margin: 16px 0 8px;
 }
 .container_reg_1{
     display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }
-.container_reg_1_1{
-    margin-right: 20px;
+.container_reg_1_1, .container_reg_1_2 {
+    width: 100%;
+    display: grid;
 }
 .input_1{
-    padding: 12px;
+    padding: 8px 12px;
     border: 2px solid rgb(206, 206, 206);
     border-radius: 6px;
     font-size: 14px;
@@ -143,19 +154,26 @@
     visibility: hidden;
 }
 .button_1 {
-    background-color: black;
-    color: white;
+    display: flex;
     font-size: 15px;
     padding: 12px 0;
     border-radius: 8px;
     width: 100%;
     margin: 40px 0 20px;
     font-weight: 600;
+    transition-duration: 0.3s;
+    justify-content: center;
 }
-.button_1:hover{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    transition-duration: 0.5s;
+.button_1 {
+    border: 2px solid rgba(3, 7, 18, 1);
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.button_1:hover {
+    border: 2px solid rgba(3, 7, 18, 1);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(3, 7, 18, 1);
 }
 
 /* class list card */
@@ -370,6 +388,12 @@
     display: none;
 }
 
+.back-button {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
 .back-arrow-container {
     text-align: left; 
     margin-top: 20px; 
@@ -382,14 +406,14 @@
     color: #000;
     font-size: 40px;
     text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     margin: 0;
+    transition: 0.3s;
 }
 
 .back-arrow:hover {
-    color: #7b7b7b;
+    color: rgb(63, 80, 131);
 }
 
-
+.container_login_3 .button_1 {
+    margin : 8px 0 16px;
+}
