@@ -25,6 +25,7 @@
     width: 77.778vw;
     display: flex;
     flex-wrap: wrap;
+    text-align: left;
     margin-bottom: 300px;
     gap: 30px;
 }

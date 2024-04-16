@@ -37,6 +37,20 @@ function nextStep2() {
     content3.style.display = "block";
 }
 
+function nextStep3() {
+    var ADD = document.getElementById("ADD");
+    var content3 = document.getElementById("content-side-bar-3");
+    var content4 = document.getElementById("content-side-bar-4");
+    var back3 = document.getElementById("back3");
+
+    ADD.classList.remove("active");
+    ADD.classList.add("finis");
+
+    back3.style.display = "none";
+    content3.style.display = "none";
+    content4.style.display = "block"
+}
+
 function goBack3() {
     nextStep1();
     var ADD = document.getElementById("ADD");

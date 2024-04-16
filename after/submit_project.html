@@ -64,7 +64,7 @@
 <script src="../javascript/submit.js"></script>
 <div class="content">
     <div class="side-navigation">
-        <a id="back1" href="index.html" class="button-contained" onclick="goBack1()""><img src="../asset/chevron-left.png">Back</a>
+        <a id="back1" href="index.html" class="button-contained" onclick="goBack1()""><img src="../asset/chevron-left.png">Back to Home</a>
         <button id="back2"class="button-contained" type="button"  onclick="goBack2()" style="display: none;"><img src="../asset/chevron-left.png">Back</button>
         <button id="back3" class="button-contained" type="button"  onclick="goBack3()" style="display: none;"><img src="../asset/chevron-left.png">Back</button>
         <div class="navigation">
@@ -84,11 +84,18 @@
     </div>
 
     <div class="content-side">
+        
         <div id="content-side-bar-1" class="content-side-bar" >
             <label for="" class="bold">Project Title</label><br>
             <input type="text" class="input-link" placeholder="Click Here....."><br><br>
             <label for="" class="bold">Project Description</label><br>
-            <textarea type="text" class="input-desc" placeholder="Click Here....."></textarea><br><br>  
+            <textarea type="text" class="input-desc" placeholder="Click Here....."></textarea><br><br> 
+             
+            <label for="" class="bold"> Tipe Project</label><br>
+            <input type="radio" id="website" name="platform" value="website">
+            <label for="website">Website</label><br>
+            <input type="radio" id="application" name="platform" value="application">
+            <label for="application">Application</label><br><br>
 
             <div class="div-footer">
                 <button id="cancel1" class="button-1 bold2">Cancel</button>
@@ -105,6 +112,8 @@
             </div>
             <label for="" class="bold"> Link Project</label><br>
             <input type="text" class="input-link" placeholder="Click Here....."><br><br>
+            
+            
 
             <div class="div-footer">
                 <button id="cancel2" class="button-1 bold2">Cancel</button>
@@ -119,9 +128,17 @@
 
             <div class="div-footer">
                 <button id="cancel3" class="button-1 bold2">Cancel</button>
-                <button id="next1" class="button-2 bold2">Publish Now</button>
+                <button id="next1" class="button-2 bold2" onclick="nextStep3()">Publish Now</button>
             </div>
         </div>
+
+        <div id="content-side-bar-4" class="content-side-bar succes-upload" style="display: none;">
+            <img src="../asset/centang.png" alt=""><br>
+            <label for="" class="font-succes">Project Anda</label><br>
+            <label for="" class="font-succes">Berhasil diupload</label><br><br><br>
+            <a href="index.html" class="button-back-home">Finish</a><br><br>
+        </div>
+        
 
         <div class="message">
 

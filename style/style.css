@@ -99,11 +99,10 @@
 }
 .container_login_2{
     width: 50%;
-    padding: 0 50px 0px 50px;
+    padding: 50px 50px 0px 50px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .container_login_1 *, .container_login_2 *, .container_login_3 * {
     margin: 0;
@@ -416,4 +415,18 @@ h1 {
 
 .container_login_3 .button_1 {
     margin : 8px 0 4px;
+}
+
+.input_3{
+    padding: 8px 12px;
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 6px;
+    font-size: 14px;
+}
+.input_4{
+    padding: 8px 12px;
+    width: 100%;
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 8px;
+    font-size: 14px;
 }

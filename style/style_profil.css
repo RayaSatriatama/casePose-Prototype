@@ -13,14 +13,16 @@
 }
 .button_3 {
     color: black;
-    padding: 15px 200px;
+    padding: 13px 200px;
     font-weight: 600;
     border-radius: 10px;
+    transition-duration: 0.2s;
 }
 
 .button_3:hover{
     color:rgb(39, 115, 255);
     background-color: rgb(225, 235, 253);
+    transition-duration: 0.2s;
 }
 .active {
     color:rgb(39, 115, 255);
