@@ -339,6 +339,8 @@
     min-width: 200px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
     z-index: 1;
+    border-radius: 0px 0px 7px 7px;
+    padding-bottom: 20px;
     right: 0;
 }
 
@@ -362,7 +364,7 @@
 }
 
 .List-dropdown:hover{
-    background-color: rgb(235, 235, 235);
+    color: rgb(62, 62, 62);
     transition-duration: 0.5s ease-out;
 }
 
