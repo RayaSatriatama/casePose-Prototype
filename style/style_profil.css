@@ -1,0 +1,88 @@
+.button_2 {
+    background-color: black;
+    color: white;
+    padding: 10px 20px ;
+    font-weight: 600;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+}
+.button_2:hover{
+    background-color: rgb(213, 213, 213);
+    color: black;
+    transition-duration: 0.5s;
+}
+.button_3 {
+    color: black;
+    padding: 15px 200px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.button_3:hover{
+    color:rgb(39, 115, 255);
+    background-color: rgb(225, 235, 253);
+}
+.active {
+    color:rgb(39, 115, 255);
+    background-color: rgb(225, 235, 253);
+}
+.profil {
+    height: 200px;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 15px 0px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(218, 218, 218);
+}
+.profil_2{
+    width: auto;
+    margin: 0 auto;
+    height: 120px;
+    display: flex;
+}
+.profil_foto
+{
+    background-size: 130px;
+    height: 130px;
+    width: 130px;
+    margin: 15px;
+    border-radius: 100px;
+    line-height: 130px;
+    margin-right: 40px;
+}
+.profil_desc{
+    margin-left: 40px;
+    gap: 20px;
+}
+.profil-desc-email {
+    margin-top: 10px;
+}
+.profil_bagan{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0px;
+    display: flex;
+    border-radius: 10px;    
+    border: 2px solid rgb(213, 213, 213);
+}
+.input_3{
+    padding: 8px 12px;
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 6px;
+    font-size: 14px;
+}
+.input_4{
+    padding: 8px 12px;
+    width: 100%;
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 8px;
+    font-size: 14px;
+}
+.profil-desc-button{
+    margin-top: 20px;
+}
+.font-name{
+    font-size: 20px;
+}
