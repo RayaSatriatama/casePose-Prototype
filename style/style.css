@@ -113,7 +113,7 @@ h1 {
 }
 .container_login_2 .roboto.bold.bold {
     font-size: 14px;
-    margin: 16px 0 8px;
+    margin: 8px 0 0px;
 }
 .container_login_3 {
     width: 50%;
@@ -125,7 +125,7 @@ h1 {
 }
 .container_login_3 .roboto.bold {
     font-size: 14px;
-    margin: 16px 0 8px;
+    margin: 8px 0 0px;
 }
 .container_reg_1{
     display: flex;
@@ -159,7 +159,7 @@ h1 {
     padding: 12px 0;
     border-radius: 8px;
     width: 100%;
-    margin: 40px 0 20px;
+    margin: 8px 0 4px;
     font-weight: 600;
     transition-duration: 0.3s;
     justify-content: center;
@@ -415,5 +415,5 @@ h1 {
 }
 
 .container_login_3 .button_1 {
-    margin : 8px 0 16px;
+    margin : 8px 0 4px;
 }
