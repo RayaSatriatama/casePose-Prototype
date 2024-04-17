@@ -188,6 +188,9 @@ a{
 .div-upload {
     text-align: center;    
 }
+.div-upload:hover {
+    background-color: rgb(242, 242, 242);
+}
 
 .div-upload img {
     width: 60px;

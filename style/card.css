@@ -4,7 +4,9 @@
         width: 340px; 
     }
 } */
-
+*{
+    margin: 0 auto;
+}
 @media (width <= 480px) {
     .card_image, .card_image_hover {
         display: flex;

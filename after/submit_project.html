@@ -104,12 +104,15 @@
 
         </div>
         <div id="content-side-bar-2" class="content-side-bar" style="display: none;">
-            <label for="" class="bold">Upload Project</label>
-            <div class="div-upload">
-                <img src="../asset/svg/document-arrow-up.png" alt=""><br>
-                <label for="" class="blue bold">Upload a file</label><label for="" class="bold"> or drag and drop</label><br>
-                <label for="" class="grey bold">PNG and JPG up o 10MB</label>
-            </div>
+            <label for="fileInput" class="bold">Upload Project</label>
+<div class="div-upload" onclick="triggerFileInput()">
+    <img src="../asset/svg/document-arrow-up.png" alt=""><br>
+    <label for="fileInput" class="blue bold">Upload a file</label><label for="fileInput" class="bold"> or drag and drop</label><br>
+    <label for="fileInput" class="grey bold">PNG and JPG up to 10MB</label>
+    <input type="file" id="fileInput" style="display: none;" onchange="handleFileInputChange(event)">
+</div>
+
+            
             <label for="" class="bold"> Link Project</label><br>
             <input type="text" class="input-link" placeholder="Click Here....."><br><br>
             
@@ -137,11 +140,6 @@
             <label for="" class="font-succes">Project Anda</label><br>
             <label for="" class="font-succes">Berhasil diupload</label><br><br><br>
             <a href="index.html" class="button-back-home">Finish</a><br><br>
-        </div>
-        
-
-        <div class="message">
-
         </div>
     </div>
 </div>

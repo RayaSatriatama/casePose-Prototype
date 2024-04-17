@@ -1,3 +1,4 @@
+
 .button_2 {
     background-color: black;
     color: white;
@@ -69,6 +70,9 @@
     border-radius: 10px;    
     border: 2px solid rgb(213, 213, 213);
 }
+.margin-auto{
+    margin: 0 auto;
+}
 .input_3{
     padding: 8px 12px;
     border: 2px solid rgb(206, 206, 206);
@@ -87,4 +91,71 @@
 }
 .font-name{
     font-size: 20px;
+}
+.ft-25{
+    font-size: 25px;
+}
+.ft-20{
+    font-size: 20px;
+}
+.content-profil-about {
+    width: 1100px;
+    height: 500px;
+    display: flex;
+    margin: 0 auto;
+    gap: 50px;
+}
+.content-profil-about-1{
+    width: 600px;
+    height: 500px;
+}
+.content-profil-about-2{
+    width: 450px;
+    height: 500px;
+}
+.head-1 ,.head-2{
+    width: 100%;
+    padding: 20px 0px;
+    border-bottom: 3px solid black;
+}
+.head-1 img {
+    width: 30px;
+    margin: 0px 15px 5px 0px;
+}
+.head-2 img {
+    width: 30px;
+    margin: 0px 15px 5px 0px;
+}
+.list-sosmed {
+    width: 450px;
+    height: 420px;
+    margin-top: 30px;
+}
+.list-sosmed-1{
+    border-bottom: 3px solid rgb(239, 239, 239);
+    display: flex;
+    gap: 16px;
+    padding: 16px 0px;
+    align-items: flex-start;
+    align-self: stretch;
+}
+.list-sosmed-1-left{
+    line-height: 140%;
+    float: left;
+    width: 120px;
+    margin-left: 20px;
+}
+.list-sosmed-1-1{
+    line-height: 140%;
+    float: left;
+}
+.list-sosmed-1-2{
+    line-height: 140%;
+    float: left;
+}
+.list-sosmed-1-2 img{
+    width: 30px;
+}
+.content-profil-about-1-content{
+    margin-top: 30px;
 }

@@ -91,3 +91,15 @@ function goBack2() {
     UP.classList.add("inactive");
     
 }
+
+function triggerFileInput() {
+    document.getElementById('fileInput').click();
+}
+
+function handleFileInputChange(event) {
+    const file = event.target.files[0];
+    if (file) {
+        // Lakukan sesuatu dengan file yang dipilih
+        console.log("File yang dipilih:", file.name);
+    }
+}
