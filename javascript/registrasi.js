@@ -39,8 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (isValid) {
-            // jika semua validasi lulus, maka masuk ke next page
-            window.location.href = "after/index.html";
+            // Menampilkan notifikasi sukses 
+            alert('Registration Successful');
+            setTimeout(function() {
+                window.location.href = "login.html";
+            }, 3000); // Redirects setelah 3 detik
         }
     });
 });
+
