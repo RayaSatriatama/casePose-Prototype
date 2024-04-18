@@ -99,7 +99,11 @@ function triggerFileInput() {
 function handleFileInputChange(event) {
     const file = event.target.files[0];
     if (file) {
-        // Lakukan sesuatu dengan file yang dipilih
         console.log("File yang dipilih:", file.name);
     }
 }
+
+function goToPage(url) {
+    window.location.href = url;
+}
+
