@@ -13,9 +13,8 @@
 .content-detail-1{
     width: 69.444vw;
     height: 38.194vw;
-    border-radius: 1.389vw;
+    border-radius: 40px;
     background-size: cover;
-    border: 2px solid rgb(239, 239, 239);
     margin-top: 100px;
 }
 
