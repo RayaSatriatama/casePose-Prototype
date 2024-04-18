@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <link rel="icon" href="asset/logo/logo_1.png">
     <title>Sign In</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/style_2.css">
@@ -12,20 +14,19 @@
 <body>
     <div class="container_login">
         <div class="container_login_1">
-            <label class="roboto bold">WELCOME to</label><br>
-            <label class="roboto bold">casePose</label>
+            <label id="1" class="roboto bold">WELCOME to</label><br>
+            <label id="2" class="roboto bold">casePose</label>
         </div>
         <div class="container_login_2">
-                <a href="index.html" class="back-arrow">&#8592;</a>
-            <h1>Sign in</h1><br>
-            <label class="roboto grey">Welcome back! Please login to your account.</label><br><br>
-            <label for="email" class="sans-serif bold">Email</label><br>
-            <input type="email" id="email" name="email" class="input_1" placeholder="Click here....."><br><br>
-            <label for="password" class="sans-serif bold">Password</label><br>
-            <input type="password" id="password" name="password" class="input_1" placeholder="Click here....."><br><br>
-            <label id="error-label" class="roboto bold red" style="display:none;">Invalid email or password</label>
-            <br>
-            <button id="signInButton" class="button_1">Sign in</button><br><br>
+            <div class="back-button"><a href="index.html" class="back-arrow">&#8592;</a></div>
+            <h1>Sign in</h1>
+            <label class="roboto grey">Welcome back! Please login to your account.</label>
+            <label for="email" class="roboto bold">Email</label>
+            <input type="email" id="email" name="email" class="input_1" placeholder="Click here.....">
+            <label for="password" class="roboto bold">Password</label>
+            <input type="password" id="password" name="password" class="input_1" placeholder="Click here.....">
+            <label id="error-label" class="roboto bold red">Invalid email or password</label>
+            <button id="signInButton" class="button_1">Sign in</button>
             <p class="grey " style="text-align: center;">New user? <a href="registrasi.html" class="roboto bold" style="color: rgb(39, 115, 255)">Sign up</a></p>
         </div>
     </div>

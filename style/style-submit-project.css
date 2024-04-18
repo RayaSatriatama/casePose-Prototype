@@ -19,7 +19,7 @@ a{
     position: relative;
 }
 
-.side-navigation .button-contained {
+.button-contained {
     all: unset;
     box-sizing: border-box;
     display: flex;
@@ -39,6 +39,11 @@ a{
     font-style: normal;
     font-weight: 600;
     line-height: 100%;
+    transition-duration: 0.2s;
+}
+.button-contained:hover {
+    background-color: rgba(241, 245, 249, 1);
+    transition-duration: 0.2s;
 }
 
 .side-navigation img {
@@ -66,7 +71,7 @@ a{
 
 .side-navigation .active {
     gap: 10px;
-    background-color: rgba(241, 245, 249, 1);
+    background-color: #d3e7fb;
     font-size: 16px;
     font-family: Roboto;
     font-weight: 600;
@@ -80,7 +85,22 @@ a{
     flex: 0 0 auto;
     border-radius: 4px;
 }
-
+.side-navigation .finis {
+    gap: 10px;
+    background-color:rgb(228, 243, 228);
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 16px;
+    word-wrap: break-word;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border-radius: 4px;
+}
 
 .side-navigation .inactive {
     color: rgba(17, 24, 39, 1);
@@ -98,9 +118,12 @@ a{
     flex: 0 0 auto;
     border-radius: 4px;
 }
-
-.content {
-
+.finis img {
+    float:right;
+}
+.inactive img,.active img{
+    float:right;
+    display:none;
 }
 .content-side-bar {
     width: 760px;
@@ -165,7 +188,37 @@ a{
 .div-upload {
     text-align: center;    
 }
+.div-upload:hover {
+    background-color: rgb(242, 242, 242);
+}
 
 .div-upload img {
     width: 60px;
+}
+
+.succes-upload{
+    margin: 0 auto;
+    text-align: center;
+}
+.succes-upload img {
+    width: 200px;
+}
+.font-succes{
+    font-size: 35px;
+    font-weight: bold;
+}
+.button-back-home{
+    padding: 10px 40px;
+    border-radius: 8px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    border: 2px solid black;
+}
+.button-back-home:hover{
+    background-color: white ;
+    color: black;
+    border-color: black;
 }

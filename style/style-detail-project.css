@@ -1,0 +1,219 @@
+.content-detail {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    margin-inline: auto;
+    flex-wrap: wrap;
+}
+
+.content-detail-1{
+    width: 69.444vw;
+    height: 38.194vw;
+    border-radius: 1.389vw;
+    background-size: cover;
+    border: 2px solid rgb(239, 239, 239);
+    margin-top: 100px;
+}
+
+@media (width <= 768px) {
+    .content-detail-1 {
+        margin: 100px 0 0 !important;
+        border-radius: 0 !important;
+        width: 100% !important;
+    }
+
+    .content-detail-desc {
+        width: 77.778vw !important;
+    }
+
+    .content-detail-list-content {
+        display: flex;
+        gap: 6.51vw !important;
+        height: 3.906vw !important;
+    }
+
+    .content-detail-more-detail .lbl {
+        text-align: left;
+        margin: 0;
+        font-size: 12px !important;
+    }
+
+    .content-detail-more-detail label {
+        text-align: left;
+        margin: 0;
+        font-size: 12px !important;
+    }
+
+    .content-detail-desc-head {
+        margin: 0 auto !important;;
+        justify-content: center !important;
+    }
+
+    .content-detail-desc-head-about p {
+        font-size: 5vw !important;
+    }
+
+    .content-detail-desc-head-type .label_2 {
+        font-size: 10px;
+    }
+
+    .content-detail-desc-head-right {
+        display: none;
+    }
+}
+
+.content-detail-desc{
+    height: 100%;
+    width: 45.139vw;
+    display: block;
+    margin-top: 50px;
+}
+
+.more-project {
+    margin: 50px 0 !important;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F1F5F9;
+    height: 100%;
+    padding: 80px 0px;
+}
+.more-project-1 {
+    margin: 12px auto;
+    width: 45.139vw;
+    display: block;
+}
+.more-project-2 {
+    width: 76.389vw;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.more-project-label {
+    font-size: 30px;
+}
+.content-detail-desc-head {
+    display: flex;
+    height: 40px;
+    padding: 0px;
+    justify-content: space-between;
+}
+.content-detail-desc-head * {
+    margin: 0;
+}
+.label_1 {
+    font-size: 25px;
+}
+.label_2 {
+    font-weight: 700;
+    color: rgb(0, 85, 255);
+}
+.content-detail-desc-head-left {
+    line-height: 40px;
+    display: flex;
+    float: left;
+}
+.content-detail-desc-head-line{
+    margin: 0px 10px;
+}
+.content-detail-desc-head-line img{
+    width: 20px;
+}
+.content-detail-desc-head-right {
+    line-height: 40px;
+    float: right;
+}
+.content-detail-desc-head-title .content-detail-desc-head-type{
+    line-height: 40px ;
+}
+.open-project-button {
+    background-color: white;
+    padding: 8px 12px;
+    color: black;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 2px solid rgb(239, 239, 239);
+    transition-duration: 0.5s;
+}
+.open-project-button:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+}
+.content-detail-desc-head-about{
+    height: 100%;
+    padding: 20px;
+}
+.content-detail-desc-head-about p {
+    font-size: 25px;
+    text-align: justify;
+}
+.content-detail-more-head {
+    line-height: 40px;
+    height: 60px;
+    width: 45.417vw;
+    display: block;
+    border-bottom: 2px solid black;
+}
+.content-detail-more-head-left {
+    display: flex;
+    float: left;
+}   
+.content-detail-list-content {
+    line-height: 4.167vw;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    width: 45.417vw;
+    border-bottom: 3px solid rgb(239, 239, 239);
+}
+
+.content-detail-more-detail label {
+    font-size: 20px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.lbl {
+    float: left ;
+    width: 6.417vw;
+    }
+.content-lbl {
+    width: 500px;
+}
+.content-detail-desc-title{
+    line-height: 40px;
+}
+.button_edit {
+    background-color: black;
+    color: white;
+    padding: 15px 24px ;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    line-height: 20px;
+    transition-duration: 0.5s;
+
+    position: fixed;
+    right: 260px; 
+    bottom: 60px; 
+    z-index: 100;
+}
+
+.button_edit:hover{
+    background-color: rgb(213, 213, 213);
+    color: black;
+    transition-duration: 0.5s;
+}
+.button_edit img {
+    height: 12px;
+    line-height: 20px;
+    padding: 0px 10px 0px 0px ;
+}
+.button_edit img:hover {
+    color: black;
+}

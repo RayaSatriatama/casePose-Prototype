@@ -4,7 +4,9 @@
         width: 340px; 
     }
 } */
-
+*{
+    margin: 0 auto;
+}
 @media (width <= 480px) {
     .card_image, .card_image_hover {
         display: flex;
@@ -25,6 +27,7 @@
     width: 77.778vw;
     display: flex;
     flex-wrap: wrap;
+    text-align: left;
     margin-bottom: 300px;
     gap: 30px;
 }
@@ -36,6 +39,12 @@
     aspect-ratio: 340 / 330;
     border-radius: 10px;
     color: black;
+    transition-duration: 0.5s;
+}
+
+.card:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.05);
 }
 
 .card_image {
@@ -50,9 +59,10 @@
     border-radius: 10px;
     height: auto;
     aspect-ratio: 340 / 280;
+    transition-duration: 0.5s;
 }
 
 .card_image_hover:hover {
-    background-color: rgba(0, 0, 0, 0.493);
     transition-duration: 0.5s;
+    background-color: rgba(255, 255, 255, 0.2);
 }
