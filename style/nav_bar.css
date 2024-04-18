@@ -73,7 +73,6 @@
     background-color: transparent;
     border-bottom: 2px solid transparent;
     color: rgba(17, 24, 39, 1);
-    border-bottom: 2px transparent #0F172A;
     cursor: pointer;
     display: inline-block;
     font-family: Roboto !important;
@@ -139,7 +138,7 @@
     border-radius: 6px;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s, fill 0.3s;
+    transition: 0.5s;
 }
 
 .navbar-button {
