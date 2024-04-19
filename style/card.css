@@ -30,6 +30,7 @@
     text-align: left;
     margin-bottom: 300px;
     gap: 30px;
+    justify-content: center;
 }
 
 .content_card a{
