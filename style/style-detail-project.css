@@ -181,7 +181,7 @@
     color: rgba(255, 255, 255, 1);
     padding: 10px 10px;
     font-weight: 600;
-    border-radius: 100%;
+    border-radius: 25px;
     line-height: 20px;
     transition-duration: 0.5s;
     height: 50px;
@@ -191,24 +191,42 @@
     bottom: 6.944vh;
     z-index: 100;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .button_edit:hover{
-    border: 2px solid rgba(3, 7, 18, 1);
+    width: 150px;
     background-color: rgba(255, 255, 255, 1);
     color: rgba(3, 7, 18, 1);
+    border: 2px solid rgba(3, 7, 18, 1);
     transition-duration: 0.5s;
 }
 .button_edit svg {
-    width: 200px;
-    height: 200px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin: 0;
 }
 .button_edit svg path {
     fill: rgba(255, 255, 255, 1);
-    transition-duration: 0.5s;
+    transition: fill 0.5s;
 }
+
 .button_edit:hover svg path {
     fill: rgba(3, 7, 18, 1);
-    transition-duration: 0.5s;
+}
+
+.button_edit .label_0 {
+    position: absolute;
+    margin: 0;
+    right: 15px;
+    color: rgba(3, 7, 18, 1);
+    white-space: nowrap;
+    opacity: 0;
+    transition-delay: 0.1s;
+}
+
+.button_edit:hover .label_0 {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition: 1s;
 }
