@@ -26,25 +26,11 @@
     }
 
     .content-detail-desc {
-        width: 77.778vw !important;
+        padding: 10.417vw !important;
     }
 
     .content-detail-list-content {
-        display: flex;
         gap: 6.51vw !important;
-        height: 3.906vw !important;
-    }
-
-    .content-detail-more-detail .lbl {
-        text-align: left;
-        margin: 0;
-        font-size: 12px !important;
-    }
-
-    .content-detail-more-detail label {
-        text-align: left;
-        margin: 0;
-        font-size: 12px !important;
     }
 
     .content-detail-desc-head {
@@ -63,22 +49,25 @@
     .content-detail-desc-head-right {
         display: none;
     }
+
+    .label_1 {
+        font-size: 24px !important;
+    }
 }
 
 .content-detail-desc{
     height: 100%;
-    width: 45.139vw;
+    width: 100%;
     display: block;
     margin-top: 50px;
+    padding: 0 27.431vw;
 }
 
 .more-project {
     margin: 50px 0 !important;
     width: 100%;
-    margin: 0 auto;
     background-color: #F1F5F9;
     height: 100%;
-    padding: 80px 0px;
 }
 .more-project-1 {
     margin: 12px auto;
@@ -155,7 +144,6 @@
 .content-detail-more-head {
     line-height: 40px;
     height: 60px;
-    width: 45.417vw;
     display: block;
     border-bottom: 2px solid rgba(3, 7, 18, 1);
 }
@@ -164,14 +152,17 @@
     float: left;
 }   
 .content-detail-list-content {
-    line-height: 4.167vw;
+    line-height: 50px;
     display: flex;
     flex-wrap: wrap;
     float: left;
-    width: 45.417vw;
-    border-bottom: 3px solid rgb(239, 239, 239);
+    width: 100%;
+    gap: 60px;
+    padding-left: 20px;
 }
-
+.content-lbl{
+    margin: 0;
+}
 .content-detail-more-detail label {
     font-size: 20px;
     flex-wrap: wrap;
@@ -179,10 +170,8 @@
 }
 .lbl {
     float: left ;
-    width: 6.417vw;
-    }
-.content-lbl {
-    width: 500px;
+    width: 70px;
+    margin: 0;
 }
 .content-detail-desc-title{
     line-height: 40px;
