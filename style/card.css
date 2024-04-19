@@ -43,7 +43,7 @@
     height: auto; 
     aspect-ratio: 340 / 330;
     border-radius: 10px;
-    color: black;
+    color: rgba(3, 7, 18, 1);
     transition-duration: 0.5s;
 }
 

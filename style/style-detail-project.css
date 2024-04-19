@@ -1,7 +1,7 @@
 .content-detail {
     margin: 0;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -131,17 +131,17 @@
     line-height: 40px ;
 }
 .open-project-button {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
     padding: 8px 12px;
-    color: black;
+    color: rgba(3, 7, 18, 1);
     font-weight: 600;
     border-radius: 6px;
     border: 2px solid rgb(239, 239, 239);
     transition-duration: 0.5s;
 }
 .open-project-button:hover {
-    background-color: black;
-    color: white;
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
     transition-duration: 0.5s;
 }
 .content-detail-desc-head-about{
@@ -157,7 +157,7 @@
     height: 60px;
     width: 45.417vw;
     display: block;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgba(3, 7, 18, 1);
 }
 .content-detail-more-head-left {
     display: flex;
