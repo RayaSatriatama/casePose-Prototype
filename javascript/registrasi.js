@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             // Validasi Email
             // untuk memastikan email berakhir dengan fromat @upi.edu
-            const emailRegex = /^[a-z]+(\.[a-z]+)*@upi\.edu$/;
+            const emailRegex = /^[a-z]+@upi\.edu$/;
             if (!emailRegex.test(email)) {
                 errorLabel2.textContent = 'Email input must be in the format @upi.edu or your format input is invalid';
                 errorLabel2.style.visibility = 'visible';
