@@ -145,11 +145,11 @@
     line-height: 40px;
     height: 60px;
     display: block;
-    border-bottom: 2px solid rgba(3, 7, 18, 1);
 }
 .content-detail-more-head-left {
     display: flex;
     float: left;
+    border-bottom: 2px solid rgba(3, 7, 18, 1);
 }   
 .content-detail-list-content {
     line-height: 50px;
