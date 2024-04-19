@@ -15,7 +15,7 @@
     transition-duration: 0.5s;
 }
 .button_3 {
-    color: black;
+    color: rgba(3, 7, 18, 1);
     padding: 13px 245px;
     font-weight: 600;
     border-radius: 10px;
@@ -24,12 +24,12 @@
 
 .button_3:hover{
     color:rgb(39, 115, 255);
-    background-color: rgb(225, 235, 253);
+    background-color: rgba(229, 238, 255, 0.765);
     transition-duration: 0.2s;
 }
 .active {
     color:rgb(39, 115, 255);
-    background-color: rgb(225, 235, 253);
+    background-color: rgba(229, 238, 255, 0.765);
 }
 .profil {
     height: 200px;
@@ -118,7 +118,7 @@
 .head-1 ,.head-2{
     width: 100%;
     padding: 20px 0px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgba(3, 7, 18, 1);
 }
 .head-1 img {
     width: 30px;

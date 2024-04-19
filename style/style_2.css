@@ -26,8 +26,8 @@
 }
 
 .button_2 {
-    background-color: black;
-    color: white;
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
     padding: 8px 79px ;
     font-weight: 600;
     border-radius: 8px;
@@ -35,21 +35,21 @@
 }
 .button_2:hover{
     background-color: rgb(213, 213, 213);
-    color: black;
+    color: rgba(3, 7, 18, 1);
     transition-duration: 0.5s;
 }
 .button_3 {
-    color: black;
+    color: rgba(3, 7, 18, 1);
     font-weight: 600;
     padding: 20px 250px;
 }
 
 .button_3:hover{
-    color: black;
-    border-bottom: 3px solid black ;
+    color: rgba(3, 7, 18, 1);
+    border-bottom: 3px solid rgba(3, 7, 18, 1) ;
 }
 .active {
-    border-bottom: 1.5px solid black;
+    border-bottom: 1.5px solid rgba(3, 7, 18, 1);
 }
 .profil {
     height: 200px;
