@@ -52,7 +52,7 @@ function nextStep3() {
 }
 
 function goBack3() {
-    nextStep1();
+    nextStep1()
     var ADD = document.getElementById("ADD");
     var UP = document.getElementById("UP");
     var content3 = document.getElementById("content-side-bar-3");
@@ -72,7 +72,7 @@ function goBack3() {
 }
 
 function goBack2() {
-    nextStep1();
+    nextStep1()
     var PI = document.getElementById("PI");
     var UP = document.getElementById("UP");
     var content2 = document.getElementById("content-side-bar-2");
@@ -94,13 +94,6 @@ function goBack2() {
 
 function triggerFileInput() {
     document.getElementById('fileInput').click();
-}
-
-function handleFileInputChange(event) {
-    const file = event.target.files[0];
-    if (file) {
-        console.log("File yang dipilih:", file.name);
-    }
 }
 
 function goToPage(url) {
