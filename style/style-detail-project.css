@@ -230,3 +230,6 @@
     transition: opacity 1s ease-in-out;
     transition: 1s;
 }
+.margin-auto{
+    margin: 0 auto;
+}

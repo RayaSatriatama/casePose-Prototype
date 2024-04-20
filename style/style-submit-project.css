@@ -274,3 +274,6 @@ a{
     color: rgba(233, 233, 235, 1);
     border-color: rgba(3, 7, 18, 1);
 }
+.margin-auto {
+    margin: 0 auto;
+}
