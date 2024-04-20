@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Validasi Email
             // untuk memastikan email berakhir dengan fromat @upi.edu
             const emailRegex = /^[a-z]+@upi\.edu$/;
-            if (!emailRegex.test(email)) {
+            const emailRegex1 = /^[a-z]+\.com$/;
+            if (!emailRegex.test(email)&&!emailRegex1.test(email)) {
                 errorLabel2.textContent = 'Email input must be in the format @upi.edu or your format input is invalid';
                 errorLabel2.style.visibility = 'visible';
                 isValid = false;
@@ -40,7 +41,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (isValid) {
             // Menampilkan notifikasi sukses 
-            alert('Registration Successful');
+
+            var teks12= document.getElementById('succes-label');
+
+            teks12.style.visibility= "visible";
+
+            // alert('Registration Successful');
             setTimeout(function() {
                 window.location.href = "login.html";
             }, 3000); // Redirects setelah 3 detik
