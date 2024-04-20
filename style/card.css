@@ -46,7 +46,6 @@
     color: rgba(3, 7, 18, 1);
     transition-duration: 0.5s;
 }
-
 .card:hover{
     transition-duration: 0.5s;
     transform: scale(1.05);
