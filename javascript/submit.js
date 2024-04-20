@@ -4,7 +4,8 @@ function nextStep1() {
     var content1 = document.getElementById("content-side-bar-1");
     var content2 = document.getElementById("content-side-bar-2");
     var back2 = document.getElementById("back2"); 
-    var back1 = document.getElementById("back1"); 
+    var back1 = document.getElementById("back1");
+     
     // Mengubah status dan tampilan PI dan UP
     PI.classList.remove("active");
     PI.classList.add("finis");
