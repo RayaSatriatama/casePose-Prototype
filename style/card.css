@@ -55,7 +55,8 @@
 .card_image {
     background-size: cover;
     border-radius: 10px;
-    max-width: 340px;
+    width:450px;
+    /* max-width: 340px; */
     height: auto;
     aspect-ratio: 340 / 280;
 }
