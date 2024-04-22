@@ -4,9 +4,6 @@
         width: 340px; 
     }
 } */
-*{
-    margin: 0 auto;
-}
 @media (width <= 480px) {
     .card_image, .card_image_hover {
         display: flex;
@@ -48,14 +45,14 @@
 }
 .card:hover{
     transition-duration: 0.5s;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
 }
 
 .card_image {
     background-size: cover;
     border-radius: 10px;
-    width:450px;
-    /* max-width: 340px; */
+    max-width: 340px;
     height: auto;
     aspect-ratio: 340 / 280;
 }
@@ -69,5 +66,5 @@
 
 .card_image_hover:hover {
     transition-duration: 0.5s;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }

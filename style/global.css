@@ -1,0 +1,30 @@
+.black{
+    color: rgba(3, 7, 18, 1);
+}
+.blue{
+    color: rgb(39, 115, 255);
+}
+.white{
+    color: rgba(255, 255, 255, 1);
+}
+.green{
+    color: green ;
+}
+.red {
+    color: red;
+}
+.grey {
+    color: rgb(150, 150, 150);
+}
+.bg-black {
+    background-color: rgba(3, 7, 18, 1);
+}
+.bg-yellow {
+    background-color: rgb(255, 145, 0);
+}
+.bold {
+    font-weight: 600;
+}
+.bold2 {
+    font-weight: 700;
+}

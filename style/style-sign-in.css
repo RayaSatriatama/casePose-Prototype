@@ -1,0 +1,105 @@
+.container_login {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    height: 550px;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: sans-serif;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.25);
+}
+.container_login_1{
+    background-image: url('../asset/frame1.png');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    color: rgba(255, 255, 255, 1);
+    padding: 225px 0px 0px 54px;
+}
+.container_login_1 #\31 {
+    font-size: 64px;
+}
+.container_login_1 #\32 {
+    font-size: 36px;
+}
+.container_login_2{
+    width: 50%;
+    padding: 50px 50px 0px 50px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.container_login_1 *, .container_login_2 *, .container_login_3 * {
+    margin: 0;
+}
+.container_login_2{
+    width: 50%;
+    padding: 50px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.container_login_2 .roboto.bold.bold {
+    font-size: 14px;
+    margin: 8px 0 0px;
+}
+.back-button {
+    color: black;
+    width : 20 ;
+    height : 20 ; 
+    fill : currentColor; 
+}
+.back-button:hover {
+    color: grey;
+}
+
+.back-arrow {
+    color: #000;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.back-arrow:hover {
+    color: rgb(63, 80, 131);
+}
+.input_1{
+    padding: 12px 5%;
+    width: 90%;
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 6px;
+    font-size: 14px;
+}
+.button_1 {
+    display: flex;
+    font-size: 15px;
+    padding: 12px 0;
+    border-radius: 8px;
+    width: 100%;
+    margin: 8px 0 4px;
+    font-weight: 600;
+    transition-duration: 0.3s;
+    justify-content: center;
+}
+.button_1 {
+    border: 2px solid rgba(3, 7, 18, 1);
+    background-color: rgba(3, 7, 18, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.button_1:hover {
+    border: 2px solid rgba(3, 7, 18, 1);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(3, 7, 18, 1);
+}
+.container_login_3 .button_1 {
+    margin : 8px 0 4px;
+}
+#error-label {
+    visibility: hidden;
+}

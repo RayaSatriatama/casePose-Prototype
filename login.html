@@ -7,27 +7,37 @@
     <!-- Title -->
     <link rel="icon" href="asset/logo/logo_1.png">
     <title>Sign In</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/style_2.css">
-</head>
-
-<body>
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/style-sign-in.css">
+    <body>
     <div class="container_login">
         <div class="container_login_1">
             <label id="1" class="roboto bold">WELCOME to</label><br>
             <label id="2" class="roboto bold">casePose</label>
         </div>
         <div class="container_login_2">
-            <div class="back-button"><a href="index.html" class="back-arrow">&#8592;</a></div>
-            <h1>Sign in</h1>
-            <label class="roboto grey">Welcome back! Please login to your account.</label>
-            <label for="email" class="roboto bold">Email</label>
-            <input type="email" id="email" name="email" class="input_1" placeholder="Click here.....">
-            <label for="password" class="roboto bold">Password</label>
-            <input type="password" id="password" name="password" class="input_1" placeholder="Click here.....">
-            <label id="error-label" class="roboto bold red">Invalid email or password</label>
-            <button id="signInButton" class="button_1">Sign in</button>
-            <p class="grey " style="text-align: center;">New user? <a href="registrasi.html" class="roboto bold" style="color: rgb(39, 115, 255)">Sign up</a></p>
+            <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"  class="back-button" >
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg></a>
+
+            <h1>Sign in</h1><br>
+            <label class="roboto grey">Welcome back! Please login to your account.</label><br>
+            <form method="" >
+                <label for="email" class="roboto bold">Email</label><br>
+
+                <input type="email" id="email" name="email" class="input_1" placeholder="Click here....."><br><br>
+
+                <label for="password" class="roboto bold">Password</label><br>
+
+                <input type="password" id="password" name="password" class="input_1" placeholder="Click here.....">
+
+                <label id="error-label" class="roboto bold red">Invalid email or password</label><br>
+
+                <button type="submit" id="signInButton" class="button_1">Sign in</button>
+
+                <p class="grey " style="text-align: center;">New user? <a href="registrasi.html" class="roboto bold" style="color: rgb(39, 115, 255)">Sign up</a></p>
+            </form>
+            
         </div>
     </div>
     <script src="javascript/login.js"></script>
